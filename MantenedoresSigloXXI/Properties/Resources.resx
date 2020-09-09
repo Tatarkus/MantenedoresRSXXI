@@ -39,10 +39,10 @@
     <data name="ProductosPageTitle" xml:space="preserve">
 		    <value>Productos</value>
     </data>
-    <data name="ShellClientesPage" xml:space="preserve">
+    <data name="ShellCustomersPage" xml:space="preserve">
 		    <value>Clientes</value>
     </data>
-    <data name="ClientesPageTitle" xml:space="preserve">
+    <data name="CustomersPageTitle" xml:space="preserve">
 		    <value>Clientes</value>
     </data>
     <data name="ShellMainPage" xml:space="preserve">

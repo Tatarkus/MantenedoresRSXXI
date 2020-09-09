@@ -1,20 +1,20 @@
-﻿using System.Windows.Controls;
+﻿using System.Collections.ObjectModel;
+using System.Windows.Controls;
 using MantenedoresSigloXXI.Controllers;
+using MantenedoresSigloXXI.Models;
 using MantenedoresSigloXXI.ViewModels;
 
 namespace MantenedoresSigloXXI.Views
 {
-    public partial class ClientesPage : Page
+    public partial class CustomersPage : Page
     {
-        public ClientesPage(ClientesViewModel viewModel)
+        public CustomersPage(CustomersViewMode viewModel)
         {
             InitializeComponent();
             DataContext = viewModel;
-            JsonResult jsonresult = new JsonResult();
-            
-            //Gets the list of clients from an example json
-            ClientsDG.ItemsSource = jsonresult.DeserializeClients();
 
+           // CustomersDG.ItemsSource = viewModel.Customers;
+            
 
         }
 
