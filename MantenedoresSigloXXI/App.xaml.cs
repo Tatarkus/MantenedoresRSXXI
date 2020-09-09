@@ -77,7 +77,7 @@ namespace MantenedoresSigloXXI
             services.AddTransient<MainViewModel>();
             services.AddTransient<MainPage>();
 
-            services.AddTransient<CustomersViewMode>();
+            services.AddTransient<CustomersViewModel>();
             services.AddTransient<CustomersPage>();
 
             services.AddTransient<ProductosViewModel>();

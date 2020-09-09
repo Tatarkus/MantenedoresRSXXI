@@ -106,6 +106,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Datos del Cliente.
+        /// </summary>
+        public static string EditCustomer {
+            get {
+                return ResourceManager.GetString("EditCustomer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Buscar:.
         /// </summary>
         public static string LabelSearch {
@@ -120,6 +129,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string MainPageTitle {
             get {
                 return ResourceManager.GetString("MainPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nuevo Cliente.
+        /// </summary>
+        public static string NewCustomer {
+            get {
+                return ResourceManager.GetString("NewCustomer", resourceCulture);
             }
         }
         

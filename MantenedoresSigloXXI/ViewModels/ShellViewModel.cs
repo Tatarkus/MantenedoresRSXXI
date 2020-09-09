@@ -38,7 +38,7 @@ namespace MantenedoresSigloXXI.ViewModels
         public ObservableCollection<HamburgerMenuItem> MenuItems { get; } = new ObservableCollection<HamburgerMenuItem>()
         {
             new HamburgerMenuGlyphItem() { Label = Resources.ShellMainPage, Glyph = "\uE8A5", TargetPageType = typeof(MainViewModel) },
-            new HamburgerMenuGlyphItem() { Label = Resources.ShellCustomersPage, Glyph = "\uE8A5", TargetPageType = typeof(CustomersViewMode) },
+            new HamburgerMenuGlyphItem() { Label = Resources.ShellCustomersPage, Glyph = "\uE8A5", TargetPageType = typeof(CustomersViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellProductosPage, Glyph = "\uE8A5", TargetPageType = typeof(ProductosViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellOtrosPage, Glyph = "\uE8A5", TargetPageType = typeof(OtrosViewModel) },
         };

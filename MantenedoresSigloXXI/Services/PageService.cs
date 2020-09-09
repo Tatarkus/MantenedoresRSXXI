@@ -19,7 +19,7 @@ namespace MantenedoresSigloXXI.Services
         {
             _serviceProvider = serviceProvider;
             Configure<MainViewModel, MainPage>();
-            Configure<CustomersViewMode, CustomersPage>();
+            Configure<CustomersViewModel, CustomersPage>();
             Configure<ProductosViewModel, ProductosPage>();
             Configure<OtrosViewModel, OtrosPage>();
             Configure<SettingsViewModel, SettingsPage>();

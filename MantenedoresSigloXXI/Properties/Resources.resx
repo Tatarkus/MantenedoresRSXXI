@@ -189,4 +189,10 @@
   <data name="ButtonClear" xml:space="preserve">
     <value>Borrar</value>
   </data>
+  <data name="EditCustomer" xml:space="preserve">
+    <value>Datos del Cliente</value>
+  </data>
+  <data name="NewCustomer" xml:space="preserve">
+    <value>Nuevo Cliente</value>
+  </data>
 </root>

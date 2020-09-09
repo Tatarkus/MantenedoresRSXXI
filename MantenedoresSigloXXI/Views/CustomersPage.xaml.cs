@@ -8,7 +8,7 @@ namespace MantenedoresSigloXXI.Views
 {
     public partial class CustomersPage : Page
     {
-        public CustomersPage(CustomersViewMode viewModel)
+        public CustomersPage(CustomersViewModel viewModel)
         {
             DataContext = viewModel;
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace MantenedoresSigloXXI.Views
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            var v = (CustomersViewMode)DataContext;
+            var v = (CustomersViewModel)DataContext;
             if (rbFilterByName != null && rbFilterByUsername != null)
             {
                 if (rbFilterByName.IsChecked.Value)
@@ -44,19 +44,25 @@ namespace MantenedoresSigloXXI.Views
 
         private void RadioButton_Checked(object sender, System.Windows.RoutedEventArgs e)
         {
-            var v = (CustomersViewMode)DataContext;
+            var v = (CustomersViewModel)DataContext;
             v.FilterByUsername(tbFilter.Text);
         }
 
         private void rbFilterByName_Checked(object sender, System.Windows.RoutedEventArgs e)
         {
-            var v = (CustomersViewMode)DataContext;
+            var v = (CustomersViewModel)DataContext;
             v.FilterByName(tbFilter.Text);
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             tbFilter.Text = "";
+        }
+
+        private void btnEditCustomer_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+
         }
     }
 }

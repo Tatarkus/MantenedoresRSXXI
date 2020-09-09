@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Controls;
 using System.Windows.Documents;
+using MantenedoresSigloXXI.Contracts.Services;
 using MantenedoresSigloXXI.Contracts.ViewModels;
 using MantenedoresSigloXXI.Controllers;
 using MantenedoresSigloXXI.Core.Contracts.Services;
@@ -12,10 +14,11 @@ using MantenedoresSigloXXI.Models;
 
 namespace MantenedoresSigloXXI.ViewModels
 {
-    public class CustomersViewMode : Observable, INavigationAware
+    public class CustomersViewModel : Observable, INavigationAware
     {
         private Customer _selected;
         public List<Customer> Customers;
+        private readonly INavigationService _navigationService;
 
         public Customer Selected
         {
@@ -36,28 +39,27 @@ namespace MantenedoresSigloXXI.ViewModels
             }
         }
 
-        public CustomersViewMode()
+        public CustomersViewModel()
         {
             Initialize();
         }
 
         private void Initialize()
         {
+            UpdateCustomerList();
+
+            //Customers = CustomerController.DeserializeCustomers();
+        }
+
+        public void UpdateCustomerList()
+        {
             Customers = CustomerController.DeserializeCustomers();
-            listOfCustomers = new ObservableCollection<Customer>(Customers);
-            
+            ListOfCustomers = new ObservableCollection<Customer>(Customers);
             //Customers = CustomerController.DeserializeCustomers();
         }
 
         public void OnNavigatedTo(object parameter)
         {
-            //We call the controller here to get the json
-            //var data = await _sampleDataService.GetMasterDetailDataAsync();
-
-            JsonResult jsonresult = new JsonResult();
-            //Customers = CustomerController.DeserializeCustomers();
-            //Gets the list of Customers from an example json
-
 
 
         }
@@ -65,18 +67,20 @@ namespace MantenedoresSigloXXI.ViewModels
         public void OnNavigatedFrom()
         {
 
-           
+
         }
 
+
+        
         public void FilterByUsername(string filterBy)
         {
-            listOfCustomers.Clear();
+            ListOfCustomers.Clear();
 
             foreach (Customer c in Customers)
             {
                 if (c.Username.StartsWith(filterBy))
                 {
-                    listOfCustomers.Add(c);
+                    ListOfCustomers.Add(c);
                 }
             }
 
@@ -84,13 +88,13 @@ namespace MantenedoresSigloXXI.ViewModels
 
         public void FilterByName(string filterBy)
         {
-            listOfCustomers.Clear();
+            ListOfCustomers.Clear();
 
             foreach (Customer c in Customers)
             {
                 if (c.Name.StartsWith(filterBy) || c.LastName.StartsWith(filterBy))
                 {
-                    listOfCustomers.Add(c);
+                    ListOfCustomers.Add(c);
                 }
             }
 
