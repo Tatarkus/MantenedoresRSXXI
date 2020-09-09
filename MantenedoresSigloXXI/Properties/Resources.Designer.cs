@@ -70,11 +70,38 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clientes.
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        public static string CustomersFilterByName {
+            get {
+                return ResourceManager.GetString("CustomersFilterByName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RUN.
+        /// </summary>
+        public static string CustomersFilterByRUN {
+            get {
+                return ResourceManager.GetString("CustomersFilterByRUN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CLIENTES.
         /// </summary>
         public static string CustomersPageTitle {
             get {
                 return ResourceManager.GetString("CustomersPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buscar:.
+        /// </summary>
+        public static string LabelSearch {
+            get {
+                return ResourceManager.GetString("LabelSearch", resourceCulture);
             }
         }
         
@@ -106,7 +133,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings page placeholder text.  Your app description goes here..
+        ///   Looks up a localized string similar to Mantenedores para el Sistema del Restaurante Siglo XXI.
         /// </summary>
         public static string SettingsPageAboutText {
             get {
@@ -115,7 +142,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to About this application.
+        ///   Looks up a localized string similar to Acerca de esta aplicación.
         /// </summary>
         public static string SettingsPageAboutTitle {
             get {
@@ -124,7 +151,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose Theme.
+        ///   Looks up a localized string similar to Seleccionar un tema.
         /// </summary>
         public static string SettingsPageChooseThemeText {
             get {
