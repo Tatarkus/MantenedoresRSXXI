@@ -180,10 +180,13 @@
   <data name="CustomersFilterByName" xml:space="preserve">
     <value>Nombre</value>
   </data>
-  <data name="CustomersFilterByRUN" xml:space="preserve">
-    <value>RUN</value>
+  <data name="CustomersFilterByUsername" xml:space="preserve">
+    <value>Username</value>
   </data>
   <data name="LabelSearch" xml:space="preserve">
     <value>Buscar:</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>Borrar</value>
   </data>
 </root>

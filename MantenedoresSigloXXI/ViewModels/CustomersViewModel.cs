@@ -43,8 +43,9 @@ namespace MantenedoresSigloXXI.ViewModels
 
         private void Initialize()
         {
-            listOfCustomers = new ObservableCollection<Customer>(CustomerController.DeserializeCustomers());
-
+            Customers = CustomerController.DeserializeCustomers();
+            listOfCustomers = new ObservableCollection<Customer>(Customers);
+            
             //Customers = CustomerController.DeserializeCustomers();
         }
 
@@ -65,6 +66,34 @@ namespace MantenedoresSigloXXI.ViewModels
         {
 
            
+        }
+
+        public void FilterByUsername(string filterBy)
+        {
+            listOfCustomers.Clear();
+
+            foreach (Customer c in Customers)
+            {
+                if (c.Username.StartsWith(filterBy))
+                {
+                    listOfCustomers.Add(c);
+                }
+            }
+
+        }
+
+        public void FilterByName(string filterBy)
+        {
+            listOfCustomers.Clear();
+
+            foreach (Customer c in Customers)
+            {
+                if (c.Name.StartsWith(filterBy) || c.LastName.StartsWith(filterBy))
+                {
+                    listOfCustomers.Add(c);
+                }
+            }
+
         }
     }
 }

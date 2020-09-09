@@ -70,6 +70,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Borrar.
+        /// </summary>
+        public static string ButtonClear {
+            get {
+                return ResourceManager.GetString("ButtonClear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nombre.
         /// </summary>
         public static string CustomersFilterByName {
@@ -79,11 +88,11 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RUN.
+        ///   Looks up a localized string similar to Username.
         /// </summary>
-        public static string CustomersFilterByRUN {
+        public static string CustomersFilterByUsername {
             get {
-                return ResourceManager.GetString("CustomersFilterByRUN", resourceCulture);
+                return ResourceManager.GetString("CustomersFilterByUsername", resourceCulture);
             }
         }
         

@@ -8,10 +8,10 @@ namespace MantenedoresSigloXXI.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string LastName { get; set; }
         public string Email { get; set; }
-        public int Phone { get; set; }
-        public DateTime RegistryDate { get; set; }
-        public string Run { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 
 }

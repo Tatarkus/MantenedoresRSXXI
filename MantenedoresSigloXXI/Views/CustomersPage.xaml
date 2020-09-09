@@ -132,7 +132,7 @@
                 Text="{x:Static properties:Resources.CustomersPageTitle}"
                 TextWrapping="NoWrap"/>
 
-            <TextBox Grid.Column="3" HorizontalAlignment="Center" Text="TextBox" TextWrapping="Wrap"  VerticalAlignment="Center" Width="175" Height="30" TextChanged="TextBox_TextChanged"/>
+            <TextBox x:Name="tbFilter" Grid.Column="3" HorizontalAlignment="Center" Text="" TextWrapping="Wrap"  VerticalAlignment="Center" Width="175" Height="30" TextChanged="TextBox_TextChanged"/>
             <TextBlock Style="{StaticResource PageTitleStyle}" Text="{x:Static properties:Resources.LabelSearch}" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap"/>
             <Grid Grid.Column="2">
                 <Grid.RowDefinitions>
@@ -140,9 +140,10 @@
                     <RowDefinition Height="*" />
 
                 </Grid.RowDefinitions>
-                <RadioButton x:Name="rbFilterByRun" Content="{x:Static properties:Resources.CustomersFilterByRUN}" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Center" Checked="RadioButton_Checked" IsChecked="True" />
-                <RadioButton x:Name="rbFilterByName" Content="{x:Static properties:Resources.CustomersFilterByName}" Grid.Row="1" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+                <RadioButton x:Name="rbFilterByUsername" Content="{x:Static properties:Resources.CustomersFilterByUsername}" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Center" Checked="RadioButton_Checked" IsChecked="True" />
+                <RadioButton x:Name="rbFilterByName" Content="{x:Static properties:Resources.CustomersFilterByName}" Grid.Row="1" HorizontalAlignment="Left"  VerticalAlignment="Center" Checked="rbFilterByName_Checked"/>
             </Grid>
+            <Button Content="{x:Static properties:Resources.ButtonClear}" Grid.Column="4" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         </Grid>
         <DataGrid x:Name="CustomersDG" ItemsSource="{Binding Path=ListOfCustomers}" Margin="0,10,0,0" Grid.Row="1" SelectedItem="{Binding Selected}" IsReadOnly="True" />
     </Grid>
