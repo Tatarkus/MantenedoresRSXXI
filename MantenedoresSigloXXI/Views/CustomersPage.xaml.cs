@@ -62,7 +62,6 @@ namespace MantenedoresSigloXXI.Views
         private void btnEditCustomer_Click(object sender, System.Windows.RoutedEventArgs e)
         {
 
-
         }
     }
 }

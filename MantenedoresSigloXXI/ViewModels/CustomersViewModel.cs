@@ -44,6 +44,11 @@ namespace MantenedoresSigloXXI.ViewModels
             Initialize();
         }
 
+        public void Test()
+        {
+            _navigationService.NavigateTo("CustomerUpdatePage");
+        }
+
         private void Initialize()
         {
             UpdateCustomerList();
