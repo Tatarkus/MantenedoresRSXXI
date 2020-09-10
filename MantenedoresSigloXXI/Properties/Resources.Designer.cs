@@ -70,11 +70,128 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aceptar.
+        /// </summary>
+        public static string ButtonAccept {
+            get {
+                return ResourceManager.GetString("ButtonAccept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Agregar.
+        /// </summary>
+        public static string ButtonAdd {
+            get {
+                return ResourceManager.GetString("ButtonAdd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancelar.
+        /// </summary>
+        public static string ButtonCancel {
+            get {
+                return ResourceManager.GetString("ButtonCancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Borrar.
         /// </summary>
         public static string ButtonClear {
             get {
                 return ResourceManager.GetString("ButtonClear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirmar.
+        /// </summary>
+        public static string ButtonConfirm {
+            get {
+                return ResourceManager.GetString("ButtonConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ELIMINAR.
+        /// </summary>
+        public static string ButtonDelete {
+            get {
+                return ResourceManager.GetString("ButtonDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editar.
+        /// </summary>
+        public static string ButtonEdit {
+            get {
+                return ResourceManager.GetString("ButtonEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Campo.
+        /// </summary>
+        public static string CustomerField {
+            get {
+                return ResourceManager.GetString("CustomerField", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to E-mail.
+        /// </summary>
+        public static string CustomerFieldEmail {
+            get {
+                return ResourceManager.GetString("CustomerFieldEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string CustomerFieldId {
+            get {
+                return ResourceManager.GetString("CustomerFieldId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apellido.
+        /// </summary>
+        public static string CustomerFieldLastName {
+            get {
+                return ResourceManager.GetString("CustomerFieldLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        public static string CustomerFieldName {
+            get {
+                return ResourceManager.GetString("CustomerFieldName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contraseña.
+        /// </summary>
+        public static string CustomerFieldPassword {
+            get {
+                return ResourceManager.GetString("CustomerFieldPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre de Usuario.
+        /// </summary>
+        public static string CustomerFieldUsername {
+            get {
+                return ResourceManager.GetString("CustomerFieldUsername", resourceCulture);
             }
         }
         
@@ -187,7 +304,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Personalization.
+        ///   Looks up a localized string similar to Personalización.
         /// </summary>
         public static string SettingsPagePersonalizationTitle {
             get {
@@ -196,7 +313,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Privacy Statement.
+        ///   Looks up a localized string similar to Privacidad.
         /// </summary>
         public static string SettingsPagePrivacyStatementText {
             get {
@@ -205,7 +322,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dark.
+        ///   Looks up a localized string similar to Oscuro.
         /// </summary>
         public static string SettingsPageRadioButtonDarkTheme {
             get {
@@ -214,7 +331,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Light.
+        ///   Looks up a localized string similar to Claro.
         /// </summary>
         public static string SettingsPageRadioButtonLightTheme {
             get {
@@ -223,7 +340,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to Configuración.
         /// </summary>
         public static string SettingsPageTitle {
             get {
@@ -291,6 +408,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string ShellSettingsPage {
             get {
                 return ResourceManager.GetString("ShellSettingsPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editar Cliente.
+        /// </summary>
+        public static string UpdateCustomerPageTitle {
+            get {
+                return ResourceManager.GetString("UpdateCustomerPageTitle", resourceCulture);
             }
         }
     }

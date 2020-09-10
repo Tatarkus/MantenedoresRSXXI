@@ -8,109 +8,8 @@
     xmlns:properties="clr-namespace:MantenedoresSigloXXI.Properties"
     mc:Ignorable="d"
     d:DesignHeight="450" d:DesignWidth="800">
-    <Page.Resources>
-        <DataTemplate x:Key="ItemTemplate">
-            <Grid Height="60">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <TextBlock
-                    Grid.Column="0"
-                    Text="{Binding Symbol}"
-                    Style="{StaticResource MediumIconStyle}"
-                    Margin="{StaticResource XSmallLeftMargin}"
-                    AutomationProperties.Name="List item icon" />
-                <StackPanel
-                    Grid.Column="1"
-                    Margin="{StaticResource SmallLeftMargin}"
-                    VerticalAlignment="Center">
-                    <TextBlock Style="{StaticResource ListTitleStyle}" Text="{Binding Company}" />
-                    <TextBlock Style="{StaticResource ListSubTitleStyle}" Text="{Binding Status}" />
-                </StackPanel>
-            </Grid>
-        </DataTemplate>
 
-        <DataTemplate x:Key="DetailTemplate">
-            <ScrollViewer
-                Name="ForegroundElement"
-                IsTabStop="True"
-                HorizontalAlignment="Stretch">
-                <StackPanel HorizontalAlignment="Left" Margin="{StaticResource MediumLeftTopRightBottomMargin}">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                        <TextBlock
-                            Text="{Binding Symbol}"
-                            Style="{StaticResource BigIconStyle}"
-                            AutomationProperties.Name="Detail icon" />
-                        <TextBlock
-                            Margin="{StaticResource SmallLeftMargin}"
-                            VerticalAlignment="Center"
-                            Text="{Binding Company, Mode=OneWay}"
-                            Style="{StaticResource PageTitleStyle}" />
-                    </StackPanel>
-                    <StackPanel Margin="{StaticResource SmallTopMargin}">
-                        <TextBlock
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Status" />
-                        <TextBlock
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="{Binding Status, Mode=OneWay}" />
-                        <TextBlock
-                            Margin="{StaticResource SmallTopMargin}"
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Order date" />
-                        <TextBlock
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="{Binding OrderDate, Mode=OneWay}" />
-                        <TextBlock
-                            Margin="{StaticResource SmallTopMargin}"
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Company" />
-                        <TextBlock
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="{Binding Company, Mode=OneWay}" />
-                        <TextBlock
-                            Margin="{StaticResource SmallTopMargin}"
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Ship to" />
-                        <TextBlock
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="{Binding ShipTo, Mode=OneWay}" />
-                        <TextBlock
-                            Margin="{StaticResource SmallTopMargin}"
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Order total" />
-                        <TextBlock
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="{Binding OrderTotal, Mode=OneWay}" />
-
-                        <TextBlock
-                            Margin="{StaticResource MediumTopMargin}"
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Note 1" />
-                        <TextBlock
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis hendrerit nulla, vel molestie libero. In nec ultricies magna, ultricies molestie ipsum. Mauris non dignissim velit. Etiam malesuada blandit mauris eu maximus. Quisque ornare, felis nec scelerisque mollis, risus dolor posuere magna, in gravida quam mi id nisi. Nullam mattis consequat ex. Cras nulla neque, dictum ac urna et, vestibulum feugiat ex. Pellentesque malesuada accumsan ligula, vel fringilla lacus facilisis sit amet. Proin convallis tempor arcu, ac placerat libero pretium ut. Praesent hendrerit nisl at lobortis viverra. Fusce vitae velit odio. Nam ut tortor sed purus finibus sollicitudin quis at ante. Ut sodales dolor vel eros mollis suscipit. Donec eu nulla id urna ultricies consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"
-                            AutomationProperties.Name="Detail note 1"
-                            AutomationProperties.HelpText="{Binding Text, RelativeSource={RelativeSource Self}}" />
-
-                        <TextBlock
-                            Margin="{StaticResource SmallTopMargin}"
-                            Style="{StaticResource SubtitleTextStyle}"
-                            Text="Note 2" />
-                        <TextBlock
-                            Margin="{StaticResource MediumBottomMargin}"
-                            Style="{StaticResource BodyTextStyle}"
-                            Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis hendrerit nulla, vel molestie libero. In nec ultricies magna, ultricies molestie ipsum. Mauris non dignissim velit. Etiam malesuada blandit mauris eu maximus. Quisque ornare, felis nec scelerisque mollis, risus dolor posuere magna, in gravida quam mi id nisi. Nullam mattis consequat ex. Cras nulla neque, dictum ac urna et, vestibulum feugiat ex. Pellentesque malesuada accumsan ligula, vel fringilla lacus facilisis sit amet. Proin convallis tempor arcu, ac placerat libero pretium ut. Praesent hendrerit nisl at lobortis viverra. Fusce vitae velit odio. Nam ut tortor sed purus finibus sollicitudin quis at ante. Ut sodales dolor vel eros mollis suscipit. Donec eu nulla id urna ultricies consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"
-                            AutomationProperties.Name="Detail note 2"
-                            AutomationProperties.HelpText="{Binding Text, RelativeSource={RelativeSource Self}}" />
-                    </StackPanel>
-                </StackPanel>
-            </ScrollViewer>
-        </DataTemplate>
-    </Page.Resources>
     <Grid>
-       
         <Grid.RowDefinitions>
             <RowDefinition Height="64" />
             <RowDefinition Height="*" />
@@ -146,7 +45,7 @@
             </Grid>
             <Button Content="{x:Static properties:Resources.ButtonClear}" Grid.Column="4" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         </Grid>
-        <DataGrid x:Name="CustomersDG" ItemsSource="{Binding Path=ListOfCustomers}" Margin="0,10,0,0" Grid.Row="1" SelectedItem="{Binding Selected}" IsReadOnly="True" />
-        <Button Command="{Binding CustomerUpdateCommand}" x:Name="btnEditCustomer" Content="Button" HorizontalAlignment="Left" Margin="624,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Click="btnEditCustomer_Click"/>
+        <DataGrid x:Name="CustomersDG" ItemsSource="{Binding Path=ListOfCustomers}" Margin="0,10,0,0" Grid.Row="1" SelectedItem="{Binding Selected}" IsReadOnly="True" SelectedIndex="0" />
+        <Button Command="{Binding CustomerUpdateCommand}" x:Name="btnEditCustomer" Content="{x:Static properties:Resources.ButtonEdit}" HorizontalAlignment="Left" Margin="624,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Click="btnEditCustomer_Click" Width="100"/>
     </Grid>
 </Page>

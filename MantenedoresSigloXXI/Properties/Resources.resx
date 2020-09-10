@@ -121,7 +121,7 @@
     <value>Settings</value>
   </data>
   <data name="SettingsPageTitle" xml:space="preserve">
-    <value>Settings</value>
+    <value>Configuración</value>
   </data>
   <data name="SettingsPageAboutText" xml:space="preserve">
     <value>Mantenedores para el Sistema del Restaurante Siglo XXI</value>
@@ -133,16 +133,16 @@
     <value>Seleccionar un tema</value>
   </data>
   <data name="SettingsPagePersonalizationTitle" xml:space="preserve">
-    <value>Personalization</value>
+    <value>Personalización</value>
   </data>
   <data name="SettingsPagePrivacyStatementText" xml:space="preserve">
-    <value>Privacy Statement</value>
+    <value>Privacidad</value>
   </data>
   <data name="SettingsPageRadioButtonDarkTheme" xml:space="preserve">
-    <value>Dark</value>
+    <value>Oscuro</value>
   </data>
   <data name="SettingsPageRadioButtonLightTheme" xml:space="preserve">
-    <value>Light</value>
+    <value>Claro</value>
   </data>
   <data name="ShellOtrosPage" xml:space="preserve">
     <value>Otros</value>
@@ -194,5 +194,47 @@
   </data>
   <data name="NewCustomer" xml:space="preserve">
     <value>Nuevo Cliente</value>
+  </data>
+  <data name="UpdateCustomerPageTitle" xml:space="preserve">
+    <value>Editar Cliente</value>
+  </data>
+  <data name="ButtonAccept" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="ButtonAdd" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="ButtonEdit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="CustomerField" xml:space="preserve">
+    <value>Campo</value>
+  </data>
+  <data name="CustomerFieldEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="CustomerFieldId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CustomerFieldLastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="CustomerFieldName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="CustomerFieldPassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="CustomerFieldUsername" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ButtonConfirm" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="ButtonDelete" xml:space="preserve">
+    <value>ELIMINAR</value>
   </data>
 </root>

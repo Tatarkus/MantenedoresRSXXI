@@ -23,9 +23,12 @@ namespace MantenedoresSigloXXI.Views
         {
             DataContext = viewModel;
             InitializeComponent();
+
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+ 
+
+        private void btnEditCustomer_Click(object sender, RoutedEventArgs e)
         {
 
         }
