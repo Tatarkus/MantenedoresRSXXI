@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Input;
 using MantenedoresSigloXXI.Contracts.Services;
 using MantenedoresSigloXXI.Contracts.ViewModels;
 using MantenedoresSigloXXI.Controllers;
@@ -19,7 +20,17 @@ namespace MantenedoresSigloXXI.ViewModels
         private Customer _selected;
         public List<Customer> Customers;
         private readonly INavigationService _navigationService;
-
+        private ICommand _customerUpdateCommand;
+        private void NavigateTo(Type targetViewModel)
+        {
+            if (targetViewModel != null)
+            {
+                _navigationService.NavigateTo(targetViewModel.FullName);
+            }
+        }
+        private void OnCustomerUpdateInvoked()
+            => NavigateTo(typeof(CustomerUpdateViewModel));
+        public ICommand CustomerUpdateCommand => _customerUpdateCommand ?? (_customerUpdateCommand = new RelayCommand(OnCustomerUpdateInvoked));
         public Customer Selected
         {
             get { return _selected; }
@@ -39,14 +50,15 @@ namespace MantenedoresSigloXXI.ViewModels
             }
         }
 
-        public CustomersViewModel()
+        public CustomersViewModel(INavigationService navigationService)
         {
+            _navigationService = navigationService;
             Initialize();
         }
 
         public void Test()
         {
-            _navigationService.NavigateTo("CustomerUpdatePage");
+            
         }
 
         private void Initialize()

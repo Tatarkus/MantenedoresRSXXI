@@ -11,12 +11,12 @@ namespace MantenedoresSigloXXI.ViewModels
 
         public void OnNavigatedFrom()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnNavigatedTo(object parameter)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
