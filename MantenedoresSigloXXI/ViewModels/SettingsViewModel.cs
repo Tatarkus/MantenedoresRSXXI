@@ -70,9 +70,8 @@ namespace MantenedoresSigloXXI.ViewModels
 
         private void OnSetLanguage(string language)
         {
-   
-            //Thread.CurrentThread.CurrentCulture = new CultureInfo(language, false);
-            //Debug.WriteLine(CultureInfo.CurrentUICulture.Name);
+            Thread.CurrentThread.CurrentCulture = new CultureInfo(language, false);
+            CultureInfo.CurrentUICulture = new CultureInfo(language, false);
         }
         private void OnPrivacyStatement()
             => _systemService.OpenInWebBrowser(_appConfig.PrivacyStatement);
