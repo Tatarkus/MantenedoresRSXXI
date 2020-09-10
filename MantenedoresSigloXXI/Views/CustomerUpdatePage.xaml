@@ -67,7 +67,7 @@
 
 
             <Label Content="{x:Static properties:Resources.CustomerFieldEmail}" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Bottom" Height="34" Width="56"/>
-            <TextBox Grid.Column="4" Grid.Row="2" Text="{Binding UpdatingCustomer.Email}" TextWrapping="Wrap" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="4" Grid.Row="2" Text="{Binding UpdatingCustomer.Email}" TextWrapping="Wrap" VerticalAlignment="Center" TextChanged="TextBox_TextChanged"/>
 
             <Label Content="{x:Static properties:Resources.CustomerFieldLastName}" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Bottom" Height="34" Width="56"/>
             <TextBox Grid.Column="4" Grid.Row="4" Text="{Binding UpdatingCustomer.LastName}" TextWrapping="{Binding UpdatingCustomer.LastName}" VerticalAlignment="Center" Margin="0,0,1,0"/>
@@ -76,8 +76,8 @@
             <TextBox Grid.Column="4" Grid.Row="6" Text="{Binding UpdatingCustomer.UserType}" TextWrapping="Wrap" VerticalAlignment="Center" IsEnabled="False"/>
         </Grid>
         <Grid Grid.Row="2">
-            <Button Foreground="Red" Command="{}" x:Name="btnDelete" Content="{x:Static properties:Resources.ButtonDelete}" HorizontalAlignment="Center"  Grid.Column="1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Background="White"/>
-            <Button Command="{}" x:Name="btnAcceptUpdate" Content="{x:Static properties:Resources.ButtonAccept}" HorizontalAlignment="Center"  Grid.Column="2" VerticalAlignment="Top"/>
+            <Button Foreground="Red" Command="{Binding DeleteCustomer}" x:Name="btnDelete" Content="{x:Static properties:Resources.ButtonDelete}" HorizontalAlignment="Center"  Grid.Column="1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Background="White" Click="btnDelete_Click"/>
+            <Button Command="{Binding EditCustomer}" x:Name="btnAcceptUpdate" Content="{x:Static properties:Resources.ButtonAccept}" HorizontalAlignment="Center"  Grid.Column="2" VerticalAlignment="Top"/>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" MinWidth="96" />

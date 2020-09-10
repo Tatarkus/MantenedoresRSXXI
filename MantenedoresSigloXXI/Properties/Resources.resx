@@ -249,4 +249,25 @@
   <data name="SelectLanguage" xml:space="preserve">
     <value>Seleccione Idioma</value>
   </data>
+  <data name="WarningMsgBoxChooseOne" xml:space="preserve">
+    <value>Debe seleccionar un cliente</value>
+  </data>
+  <data name="WarningMsgBoxDelete" xml:space="preserve">
+    <value>¿Está seguro que desea borrar al cliente?</value>
+  </data>
+  <data name="WarningMsgBoxEdit" xml:space="preserve">
+    <value>Se aplicarán los cambios</value>
+  </data>
+  <data name="WarningMsgBoxInvalidEmail" xml:space="preserve">
+    <value>El correo ingresado no es válido</value>
+  </data>
+  <data name="WarningMsgBoxInvalidLastName" xml:space="preserve">
+    <value>El apellido no es válido</value>
+  </data>
+  <data name="WarningMsgBoxInvalidName" xml:space="preserve">
+    <value>El nombre no es válido</value>
+  </data>
+  <data name="WarningMsgBoxTitle" xml:space="preserve">
+    <value>Advertencia!</value>
+  </data>
 </root>

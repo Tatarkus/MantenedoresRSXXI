@@ -455,5 +455,68 @@ namespace MantenedoresSigloXXI.Properties {
                 return ResourceManager.GetString("UpdateCustomerPageTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debe seleccionar un cliente.
+        /// </summary>
+        public static string WarningMsgBoxChooseOne {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxChooseOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ¿Está seguro que desea borrar al cliente?.
+        /// </summary>
+        public static string WarningMsgBoxDelete {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxDelete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se aplicarán los cambios.
+        /// </summary>
+        public static string WarningMsgBoxEdit {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El correo ingresado no es válido.
+        /// </summary>
+        public static string WarningMsgBoxInvalidEmail {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxInvalidEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El apellido no es válido.
+        /// </summary>
+        public static string WarningMsgBoxInvalidLastName {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxInvalidLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to El nombre no es válido.
+        /// </summary>
+        public static string WarningMsgBoxInvalidName {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxInvalidName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Advertencia!.
+        /// </summary>
+        public static string WarningMsgBoxTitle {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxTitle", resourceCulture);
+            }
+        }
     }
 }

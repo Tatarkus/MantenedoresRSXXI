@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -24,7 +25,16 @@ namespace MantenedoresSigloXXI.ViewModels
 
         private ICommand _customerUpdateCommand;
         private void OnCustomerUpdateInvoked()
-            => NavigateTo(typeof(CustomerUpdateViewModel),_selected);
+        {
+            if (_selected != null)
+            {
+                NavigateTo(typeof(CustomerUpdateViewModel), _selected);
+            }
+            else
+            {
+                MessageBox.Show(Properties.Resources.WarningMsgBoxChooseOne, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+            }
+        }
         public ICommand CustomerUpdateCommand => _customerUpdateCommand ?? (_customerUpdateCommand = new RelayCommand(OnCustomerUpdateInvoked));
         public Customer Selected
         {
@@ -70,8 +80,9 @@ namespace MantenedoresSigloXXI.ViewModels
                 Customers.Clear();
             if(ListOfCustomers.Count > 0)
                 ListOfCustomers.Clear();
-            CustomerController cc = new CustomerController();
-            Customers = cc.GetCustomers();
+            CustomerController.GetCustomersJSON();
+            
+            Customers = CustomerController.GetCustomersList();
             ListOfCustomers = new ObservableCollection<Customer>(Customers);
             //Customers = CustomerController.DeserializeCustomers();
         }
