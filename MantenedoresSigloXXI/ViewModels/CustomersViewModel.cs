@@ -70,7 +70,8 @@ namespace MantenedoresSigloXXI.ViewModels
                 Customers.Clear();
             if(ListOfCustomers.Count > 0)
                 ListOfCustomers.Clear();
-            Customers = CustomerController.DeserializeCustomers();
+            CustomerController cc = new CustomerController();
+            Customers = cc.GetCustomers();
             ListOfCustomers = new ObservableCollection<Customer>(Customers);
             //Customers = CustomerController.DeserializeCustomers();
         }

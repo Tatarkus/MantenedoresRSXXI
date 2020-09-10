@@ -4,7 +4,6 @@ using System.Linq;
 using System.Windows.Input;
 
 using MahApps.Metro.Controls;
-using MahApps.Metro.IconPacks;
 using MantenedoresSigloXXI.Contracts.Services;
 using MantenedoresSigloXXI.Helpers;
 using MantenedoresSigloXXI.Properties;

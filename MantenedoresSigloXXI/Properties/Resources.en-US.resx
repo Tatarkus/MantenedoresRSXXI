@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,98 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ShellSettingsPage" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="SettingsPageTitle" xml:space="preserve">
-    <value>Configuración</value>
-  </data>
-  <data name="SettingsPageAboutText" xml:space="preserve">
-    <value>Mantenedores para el Sistema del Restaurante Siglo XXI</value>
-  </data>
-  <data name="SettingsPageAboutTitle" xml:space="preserve">
-    <value>Acerca de esta aplicación</value>
-  </data>
-  <data name="SettingsPageChooseThemeText" xml:space="preserve">
-    <value>Seleccionar un tema</value>
-  </data>
-  <data name="SettingsPagePersonalizationTitle" xml:space="preserve">
-    <value>Personalización</value>
-  </data>
-  <data name="SettingsPagePrivacyStatementText" xml:space="preserve">
-    <value>Privacidad</value>
-  </data>
-  <data name="SettingsPageRadioButtonDarkTheme" xml:space="preserve">
-    <value>Oscuro</value>
-  </data>
-  <data name="SettingsPageRadioButtonLightTheme" xml:space="preserve">
-    <value>Claro</value>
-  </data>
-  <data name="ShellOtrosPage" xml:space="preserve">
-    <value>Otros</value>
-  </data>
-  <data name="OtrosPageTitle" xml:space="preserve">
-    <value>Otros</value>
-  </data>
-  <data name="ShellProductosPage" xml:space="preserve">
-    <value>Productos</value>
-  </data>
-  <data name="ProductosPageTitle" xml:space="preserve">
-    <value>Productos</value>
-  </data>
-  <data name="ShellCustomersPage" xml:space="preserve">
-    <value>Clientes</value>
-  </data>
-  <data name="CustomersPageTitle" xml:space="preserve">
-    <value>CLIENTES</value>
-  </data>
-  <data name="ShellMainPage" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="MainPageTitle" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="ShellGoBackButton" xml:space="preserve">
-    <value>Go back</value>
-  </data>
-  <data name="ShellHamburgerButtonName" xml:space="preserve">
-    <value>Open or close navigation</value>
-  </data>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>MantenedoresSigloXXI</value>
-  </data>
-  <data name="CustomersFilterByName" xml:space="preserve">
-    <value>Nombre</value>
-  </data>
-  <data name="CustomersFilterByUsername" xml:space="preserve">
-    <value>Username</value>
-  </data>
-  <data name="LabelSearch" xml:space="preserve">
-    <value>Buscar:</value>
-  </data>
-  <data name="ButtonClear" xml:space="preserve">
-    <value>Borrar</value>
-  </data>
-  <data name="EditCustomer" xml:space="preserve">
-    <value>Datos del Cliente</value>
-  </data>
-  <data name="NewCustomer" xml:space="preserve">
-    <value>Nuevo Cliente</value>
-  </data>
-  <data name="UpdateCustomerPageTitle" xml:space="preserve">
-    <value>Editar Cliente</value>
+    <value>CRUD Restaurant Siglo XXI</value>
   </data>
   <data name="ButtonAccept" xml:space="preserve">
-    <value>Aceptar</value>
+    <value>Accept</value>
   </data>
   <data name="ButtonAdd" xml:space="preserve">
-    <value>Agregar</value>
+    <value>Add</value>
+  </data>
+  <data name="ButtonCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ButtonClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ButtonConfirm" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="ButtonDelete" xml:space="preserve">
+    <value>DELETE</value>
   </data>
   <data name="ButtonEdit" xml:space="preserve">
-    <value>Editar</value>
+    <value>Edit</value>
   </data>
   <data name="CustomerField" xml:space="preserve">
-    <value>Campo</value>
+    <value>Field</value>
   </data>
   <data name="CustomerFieldEmail" xml:space="preserve">
     <value>E-mail</value>
@@ -217,28 +151,31 @@
     <value>ID</value>
   </data>
   <data name="CustomerFieldLastName" xml:space="preserve">
-    <value>Apellido</value>
+    <value>Last Name</value>
   </data>
   <data name="CustomerFieldName" xml:space="preserve">
-    <value>Nombre</value>
+    <value>Name</value>
   </data>
   <data name="CustomerFieldPassword" xml:space="preserve">
-    <value>Contraseña</value>
+    <value>Password</value>
   </data>
   <data name="CustomerFieldUsername" xml:space="preserve">
-    <value>Nombre de Usuario</value>
+    <value>Username</value>
   </data>
-  <data name="ButtonCancel" xml:space="preserve">
-    <value>Cancelar</value>
+  <data name="CustomersFilterByName" xml:space="preserve">
+    <value>Name</value>
   </data>
-  <data name="ButtonConfirm" xml:space="preserve">
-    <value>Confirmar</value>
+  <data name="CustomersFilterByUsername" xml:space="preserve">
+    <value>Username</value>
   </data>
-  <data name="ButtonDelete" xml:space="preserve">
-    <value>ELIMINAR</value>
+  <data name="CustomersPageTitle" xml:space="preserve">
+    <value>Customers</value>
   </data>
-  <data name="CustomerFieldUsertype" xml:space="preserve">
-    <value>Tipo de usuario</value>
+  <data name="EditCustomer" xml:space="preserve">
+    <value>Customer Information</value>
+  </data>
+  <data name="LabelSearch" xml:space="preserve">
+    <value>Search:</value>
   </data>
   <data name="LanguageEN" xml:space="preserve">
     <value>English</value>
@@ -246,7 +183,67 @@
   <data name="LanguageES" xml:space="preserve">
     <value>Español</value>
   </data>
+  <data name="MainPageTitle" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="NewCustomer" xml:space="preserve">
+    <value>New Customer</value>
+  </data>
+  <data name="OtrosPageTitle" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="ProductosPageTitle" xml:space="preserve">
+    <value>Products</value>
+  </data>
   <data name="SelectLanguage" xml:space="preserve">
-    <value>Seleccione Idioma</value>
+    <value>Select a language</value>
+  </data>
+  <data name="SettingsPageAboutText" xml:space="preserve">
+    <value>Administration Software for the Restaurant "Siglo XXI"</value>
+  </data>
+  <data name="SettingsPageAboutTitle" xml:space="preserve">
+    <value>About this application</value>
+  </data>
+  <data name="SettingsPageChooseThemeText" xml:space="preserve">
+    <value>Select a theme</value>
+  </data>
+  <data name="SettingsPagePersonalizationTitle" xml:space="preserve">
+    <value>Personalization</value>
+  </data>
+  <data name="SettingsPagePrivacyStatementText" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="SettingsPageRadioButtonDarkTheme" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="SettingsPageRadioButtonLightTheme" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="SettingsPageTitle" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="ShellCustomersPage" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="ShellGoBackButton" xml:space="preserve">
+    <value>Go back</value>
+  </data>
+  <data name="ShellHamburgerButtonName" xml:space="preserve">
+    <value>Open or close navigation</value>
+  </data>
+  <data name="ShellMainPage" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="ShellOtrosPage" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="ShellProductosPage" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="ShellSettingsPage" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="UpdateCustomerPageTitle" xml:space="preserve">
+    <value>Edit Customer Information</value>
   </data>
 </root>

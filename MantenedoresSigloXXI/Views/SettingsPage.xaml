@@ -32,38 +32,76 @@
                     Margin="{StaticResource SmallTopMargin}"
                     Style="{StaticResource SubtitleTextStyle}"
                     Text="{x:Static properties:Resources.SettingsPagePersonalizationTitle}" />
-                <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
-                    <TextBlock
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Margin="{StaticResource SmallTopBottomMargin}">
+                        <TextBlock
                         Style="{StaticResource BodyTextStyle}"
                         Text="{x:Static properties:Resources.SettingsPageChooseThemeText}" />
-                    <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                        <RadioButton
+                        <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                            <RadioButton
                             GroupName="AppTheme"
                             Content="{x:Static properties:Resources.SettingsPageRadioButtonLightTheme}"
                             FontSize="{StaticResource MediumFontSize}"
                             IsChecked="{Binding Theme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light}">
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Checked">
-                                    <i:InvokeCommandAction Command="{Binding SetThemeCommand}" CommandParameter="Light" />
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </RadioButton>
-                        <RadioButton
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Checked">
+                                        <i:InvokeCommandAction Command="{Binding SetThemeCommand}" CommandParameter="Light" />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </RadioButton>
+                            <RadioButton
                             GroupName="AppTheme"
                             Content="{x:Static properties:Resources.SettingsPageRadioButtonDarkTheme}"
                             Margin="{StaticResource XSmallTopMargin}"
                             FontSize="{StaticResource MediumFontSize}"
                             IsChecked="{Binding Theme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark}">
-                            <i:Interaction.Triggers>
-                                <i:EventTrigger EventName="Checked">
-                                    <i:InvokeCommandAction Command="{Binding SetThemeCommand}" CommandParameter="Dark" />
-                                </i:EventTrigger>
-                            </i:Interaction.Triggers>
-                        </RadioButton>
-                    </StackPanel>
-                </StackPanel>
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Checked">
+                                        <i:InvokeCommandAction Command="{Binding SetThemeCommand}" CommandParameter="Dark" />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </RadioButton>
+                        </StackPanel>
 
-                <TextBlock
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Margin="{StaticResource SmallTopBottomMargin}">
+                        <TextBlock
+                        Style="{StaticResource BodyTextStyle}"
+                        Text="{x:Static properties:Resources.SelectLanguage}" />
+                        <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                            <RadioButton
+                            GroupName="AppTheme"
+                            Content="{x:Static properties:Resources.LanguageEN}"
+                            FontSize="{StaticResource MediumFontSize}">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Checked">
+                                        <i:InvokeCommandAction Command="{Binding SetLanguageCommand}" CommandParameter="en-US" />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </RadioButton>
+                            <RadioButton
+                            GroupName="AppTheme"
+                            Content="{x:Static properties:Resources.LanguageES}"
+                            Margin="{StaticResource XSmallTopMargin}"
+                            FontSize="{StaticResource MediumFontSize}" IsChecked="True">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Checked">
+                                        <i:InvokeCommandAction Command="{Binding SetLanguageCommand}" CommandParameter="en-ES" />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </RadioButton>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+                
+                
+                    <TextBlock
                     Margin="{StaticResource SmallTopMargin}"
                     Style="{StaticResource SubtitleTextStyle}"
                     Text="{x:Static properties:Resources.SettingsPageAboutTitle}" />

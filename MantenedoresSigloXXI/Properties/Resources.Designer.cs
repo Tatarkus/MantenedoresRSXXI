@@ -196,6 +196,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tipo de usuario.
+        /// </summary>
+        public static string CustomerFieldUsertype {
+            get {
+                return ResourceManager.GetString("CustomerFieldUsertype", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nombre.
         /// </summary>
         public static string CustomersFilterByName {
@@ -241,6 +250,24 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to English.
+        /// </summary>
+        public static string LanguageEN {
+            get {
+                return ResourceManager.GetString("LanguageEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Español.
+        /// </summary>
+        public static string LanguageES {
+            get {
+                return ResourceManager.GetString("LanguageES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Main.
         /// </summary>
         public static string MainPageTitle {
@@ -273,6 +300,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string ProductosPageTitle {
             get {
                 return ResourceManager.GetString("ProductosPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleccione Idioma.
+        /// </summary>
+        public static string SelectLanguage {
+            get {
+                return ResourceManager.GetString("SelectLanguage", resourceCulture);
             }
         }
         

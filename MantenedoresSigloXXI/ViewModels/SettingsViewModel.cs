@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Threading;
 using System.Windows.Input;
 
 using MantenedoresSigloXXI.Contracts.Services;
@@ -20,7 +23,9 @@ namespace MantenedoresSigloXXI.ViewModels
         private AppTheme _theme;
         private string _versionDescription;
         private ICommand _setThemeCommand;
+        private ICommand _setLanguageCommand;
         private ICommand _privacyStatementCommand;
+
 
         public AppTheme Theme
         {
@@ -35,6 +40,7 @@ namespace MantenedoresSigloXXI.ViewModels
         }
 
         public ICommand SetThemeCommand => _setThemeCommand ?? (_setThemeCommand = new RelayCommand<string>(OnSetTheme));
+        public ICommand SetLanguageCommand => _setLanguageCommand ?? (_setLanguageCommand = new RelayCommand<string>(OnSetLanguage));
 
         public ICommand PrivacyStatementCommand => _privacyStatementCommand ?? (_privacyStatementCommand = new RelayCommand(OnPrivacyStatement));
 
@@ -62,6 +68,12 @@ namespace MantenedoresSigloXXI.ViewModels
             _themeSelectorService.SetTheme(theme);
         }
 
+        private void OnSetLanguage(string language)
+        {
+   
+            //Thread.CurrentThread.CurrentCulture = new CultureInfo(language, false);
+            //Debug.WriteLine(CultureInfo.CurrentUICulture.Name);
+        }
         private void OnPrivacyStatement()
             => _systemService.OpenInWebBrowser(_appConfig.PrivacyStatement);
     }
