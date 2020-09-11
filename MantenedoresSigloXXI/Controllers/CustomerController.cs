@@ -24,10 +24,18 @@ namespace MantenedoresSigloXXI.Controllers
         {
             WebRequest request = WebRequest.Create(CustomersURL);
             request.Method = "GET";
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            try
+            {
+            HttpWebResponse response = request.GetResponse() as HttpWebResponse;       
             var encod = ASCIIEncoding.ASCII;
             using var readCustomers = new System.IO.StreamReader(response.GetResponseStream(), encod);
             CustomersJSON = readCustomers.ReadToEnd();
+            }
+            catch (Exception)
+            {
+
+                return ("");
+            }
             return (CustomersJSON);
 
         }

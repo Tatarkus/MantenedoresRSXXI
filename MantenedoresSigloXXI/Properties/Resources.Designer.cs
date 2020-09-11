@@ -295,11 +295,11 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Productos.
+        ///   Looks up a localized string similar to Insumos.
         /// </summary>
-        public static string ProductosPageTitle {
+        public static string ProductsPageTitle {
             get {
-                return ResourceManager.GetString("ProductosPageTitle", resourceCulture);
+                return ResourceManager.GetString("ProductsPageTitle", resourceCulture);
             }
         }
         
@@ -430,11 +430,11 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Productos.
+        ///   Looks up a localized string similar to Products.
         /// </summary>
-        public static string ShellProductosPage {
+        public static string ShellProductsPage {
             get {
-                return ResourceManager.GetString("ShellProductosPage", resourceCulture);
+                return ResourceManager.GetString("ShellProductsPage", resourceCulture);
             }
         }
         

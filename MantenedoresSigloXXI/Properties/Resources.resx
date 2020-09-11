@@ -150,11 +150,11 @@
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Otros</value>
   </data>
-  <data name="ShellProductosPage" xml:space="preserve">
-    <value>Productos</value>
+  <data name="ShellProductsPage" xml:space="preserve">
+    <value>Products</value>
   </data>
-  <data name="ProductosPageTitle" xml:space="preserve">
-    <value>Productos</value>
+  <data name="ProductsPageTitle" xml:space="preserve">
+    <value>Insumos</value>
   </data>
   <data name="ShellCustomersPage" xml:space="preserve">
     <value>Clientes</value>

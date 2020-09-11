@@ -192,7 +192,7 @@
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
   </data>
-  <data name="ProductosPageTitle" xml:space="preserve">
+  <data name="ProductsPageTitle" xml:space="preserve">
     <value>Products</value>
   </data>
   <data name="SelectLanguage" xml:space="preserve">
@@ -237,7 +237,7 @@
   <data name="ShellOtrosPage" xml:space="preserve">
     <value>Other</value>
   </data>
-  <data name="ShellProductosPage" xml:space="preserve">
+  <data name="ShellProductsPage" xml:space="preserve">
     <value>Products</value>
   </data>
   <data name="ShellSettingsPage" xml:space="preserve">

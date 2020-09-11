@@ -9,7 +9,7 @@ using MantenedoresSigloXXI.Helpers;
 
 namespace MantenedoresSigloXXI.ViewModels
 {
-    public class ProductosViewModel : Observable, INavigationAware
+    public class ProductsViewModel : Observable, INavigationAware
     {
         private readonly ISampleDataService _sampleDataService;
         private SampleOrder _selected;
@@ -22,7 +22,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
         public ObservableCollection<SampleOrder> SampleItems { get; private set; } = new ObservableCollection<SampleOrder>();
 
-        public ProductosViewModel(ISampleDataService sampleDataService)
+        public ProductsViewModel(ISampleDataService sampleDataService)
         {
             _sampleDataService = sampleDataService;
         }

@@ -4,9 +4,9 @@ using MantenedoresSigloXXI.ViewModels;
 
 namespace MantenedoresSigloXXI.Views
 {
-    public partial class ProductosPage : Page
+    public partial class ProductsPage : Page
     {
-        public ProductosPage(ProductosViewModel viewModel)
+        public ProductsPage(ProductsViewModel viewModel)
         {
             InitializeComponent();
             DataContext = viewModel;

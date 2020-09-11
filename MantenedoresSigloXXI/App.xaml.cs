@@ -80,8 +80,8 @@ namespace MantenedoresSigloXXI
             services.AddTransient<CustomersViewModel>();
             services.AddTransient<CustomersPage>();
 
-            services.AddTransient<ProductosViewModel>();
-            services.AddTransient<ProductosPage>();
+            services.AddTransient<ProductsViewModel>();
+            services.AddTransient<ProductsPage>();
 
             services.AddTransient<OtrosViewModel>();
             services.AddTransient<OtrosPage>();
