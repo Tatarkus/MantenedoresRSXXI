@@ -105,7 +105,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
             foreach (Product p in Products)
             {
-                if (p.Id.ToString().StartsWith(filterBy))
+                if (p.Id.ToString() == (filterBy))
                 {
                     ListOfProducts.Add(p);
                 }
@@ -119,7 +119,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
             foreach (Product p in Products)
             {
-                if (p.Name.StartsWith(filterBy) || p.Name.Contains(filterBy))
+                if ( p.Name.ToLower().StartsWith(filterBy.ToLower()) || p.Name.ToLower().Contains(filterBy.ToLower()))
                 {
                     ListOfProducts.Add(p);
                 }

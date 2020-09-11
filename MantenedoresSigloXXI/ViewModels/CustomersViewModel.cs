@@ -93,7 +93,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
             foreach (Customer c in Customers)
             {
-                if (c.Username.StartsWith(filterBy))
+                if (c.Username.ToLower().StartsWith(filterBy.ToLower()))
                 {
                     ListOfCustomers.Add(c);
                 }
@@ -107,7 +107,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
             foreach (Customer c in Customers)
             {
-                if (c.Name.StartsWith(filterBy) || c.LastName.StartsWith(filterBy))
+                if (c.Name.ToLower().StartsWith(filterBy.ToLower()) || c.LastName.ToLower().StartsWith(filterBy.ToLower()))
                 {
                     ListOfCustomers.Add(c);
                 }
