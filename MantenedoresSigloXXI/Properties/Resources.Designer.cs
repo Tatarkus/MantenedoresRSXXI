@@ -142,6 +142,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cliente eliminado con éxito.
+        /// </summary>
+        public static string CustomerDeleted {
+            get {
+                return ResourceManager.GetString("CustomerDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Campo.
         /// </summary>
         public static string CustomerField {
@@ -241,6 +250,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Datos actualizados con éxito.
+        /// </summary>
+        public static string CustomerUpdated {
+            get {
+                return ResourceManager.GetString("CustomerUpdated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Datos del Cliente.
         /// </summary>
         public static string EditCustomer {
@@ -255,6 +273,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string EditProduct {
             get {
                 return ResourceManager.GetString("EditProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ha habido un error con la conexión.
+        /// </summary>
+        public static string ErrorMsg {
+            get {
+                return ResourceManager.GetString("ErrorMsg", resourceCulture);
             }
         }
         
@@ -304,6 +331,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Añadir un producto.
+        /// </summary>
+        public static string NewProduct {
+            get {
+                return ResourceManager.GetString("NewProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Otros.
         /// </summary>
         public static string OtrosPageTitle {
@@ -313,11 +349,29 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Insumo agregado con éxito!.
+        /// </summary>
+        public static string ProductCreated {
+            get {
+                return ResourceManager.GetString("ProductCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Añadir un producto.
         /// </summary>
         public static string ProductCreatePage {
             get {
                 return ResourceManager.GetString("ProductCreatePage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insumo Eliminado.
+        /// </summary>
+        public static string ProductDeleted {
+            get {
+                return ResourceManager.GetString("ProductDeleted", resourceCulture);
             }
         }
         
@@ -390,6 +444,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string ProductsPageTitle {
             get {
                 return ResourceManager.GetString("ProductsPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Datos actualizados con éxito.
+        /// </summary>
+        public static string ProductUpdated {
+            get {
+                return ResourceManager.GetString("ProductUpdated", resourceCulture);
             }
         }
         

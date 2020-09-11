@@ -54,7 +54,19 @@ namespace MantenedoresSigloXXI.ViewModels
                 switch (result)
                 {
                     case MessageBoxResult.OK:
-                        ProductController.DeleteProduct(UpdatingProduct);
+                        int r = ProductController.DeleteProduct(UpdatingProduct);
+                        if (r == 201)
+                        {
+
+
+                            MessageBox.Show(Properties.Resources.ProductDeleted, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                        }
+                        else
+                        {
+                            MessageBox.Show(Properties.Resources.ErrorMsg, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+
+
+                        }
                         Back();
                         break;
                     case MessageBoxResult.Cancel:
@@ -79,7 +91,18 @@ namespace MantenedoresSigloXXI.ViewModels
                 switch (result)
                 {
                     case MessageBoxResult.OK:
-                        ProductController.EditProduct(UpdatingProduct);
+
+                        int r =ProductController.EditProduct(UpdatingProduct);
+                        if (r == 201)
+                        {
+                            MessageBox.Show(Properties.Resources.ProductUpdated, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                        }
+                        else
+                        {
+                            MessageBox.Show(Properties.Resources.ErrorMsg, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+
+
+                        }
                         Back();
                         break;
                     case MessageBoxResult.Cancel:

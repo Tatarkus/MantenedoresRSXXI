@@ -144,6 +144,9 @@
   <data name="CreateProduct" xml:space="preserve">
     <value>Add a new product</value>
   </data>
+  <data name="CustomerDeleted" xml:space="preserve">
+    <value>Customer deleted!</value>
+  </data>
   <data name="CustomerField" xml:space="preserve">
     <value>Field</value>
   </data>
@@ -177,11 +180,17 @@
   <data name="CustomersPageTitle" xml:space="preserve">
     <value>CUSTOMERS</value>
   </data>
+  <data name="CustomerUpdated" xml:space="preserve">
+    <value>Customer updated!</value>
+  </data>
   <data name="EditCustomer" xml:space="preserve">
     <value>Customer Information</value>
   </data>
   <data name="EditProduct" xml:space="preserve">
     <value>Update product information</value>
+  </data>
+  <data name="ErrorMsg" xml:space="preserve">
+    <value>Conection error</value>
   </data>
   <data name="LabelSearch" xml:space="preserve">
     <value>Search:</value>
@@ -200,6 +209,12 @@
   </data>
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
+  </data>
+  <data name="ProductCreated" xml:space="preserve">
+    <value>Product added succesfuly!</value>
+  </data>
+  <data name="ProductDeleted" xml:space="preserve">
+    <value>Product deleted!</value>
   </data>
   <data name="ProductFieldCreado" xml:space="preserve">
     <value>Created a</value>
@@ -224,6 +239,9 @@
   </data>
   <data name="ProductsPageTitle" xml:space="preserve">
     <value>Products</value>
+  </data>
+  <data name="ProductUpdated" xml:space="preserve">
+    <value>Product updated!</value>
   </data>
   <data name="SelectLanguage" xml:space="preserve">
     <value>Pick a language</value>

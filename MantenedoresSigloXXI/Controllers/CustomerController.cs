@@ -50,9 +50,19 @@ namespace MantenedoresSigloXXI.Controllers
         {
             WebRequest request = WebRequest.Create(CustomersURL+customer.Id);
             request.Method = "DELETE";
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
-            return (int)response.StatusCode;
+            try
+            {
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
+                Debug.WriteLine((int)response.StatusCode);
+                return (int)response.StatusCode;
+            }
+            catch (Exception)
+            {
+
+                return 500;
+            }
+            
 
         }
 
@@ -75,9 +85,19 @@ namespace MantenedoresSigloXXI.Controllers
             {              
                 streamWriter.Write(jsonPayload);
             }
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
-            return (int)response.StatusCode;
+            try
+            {
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
+                Debug.WriteLine((int)response.StatusCode);
+                return (int)response.StatusCode;
+            }
+            catch (Exception)
+            {
+
+                return 500;
+            }
+            
 
         }
     }

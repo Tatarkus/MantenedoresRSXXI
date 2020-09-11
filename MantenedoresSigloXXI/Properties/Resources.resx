@@ -309,10 +309,31 @@
   <data name="CreateProduct" xml:space="preserve">
     <value>Añadir un producto</value>
   </data>
+  <data name="NewProduct" xml:space="preserve">
+    <value>Añadir un producto</value>
+  </data>
   <data name="ProductCreatePage" xml:space="preserve">
-    <value />
+    <value>Añadir un producto</value>
   </data>
   <data name="WarningMsgBoxInvalidQuantity" xml:space="preserve">
     <value>La cantidad no es valida. Debe ser un número menor a 99.999</value>
+  </data>
+  <data name="CustomerDeleted" xml:space="preserve">
+    <value>Cliente eliminado con éxito</value>
+  </data>
+  <data name="CustomerUpdated" xml:space="preserve">
+    <value>Datos actualizados con éxito</value>
+  </data>
+  <data name="ErrorMsg" xml:space="preserve">
+    <value>Ha habido un error con la conexión</value>
+  </data>
+  <data name="ProductCreated" xml:space="preserve">
+    <value>Insumo agregado con éxito!</value>
+  </data>
+  <data name="ProductDeleted" xml:space="preserve">
+    <value>Insumo Eliminado</value>
+  </data>
+  <data name="ProductUpdated" xml:space="preserve">
+    <value>Datos actualizados con éxito</value>
   </data>
 </root>

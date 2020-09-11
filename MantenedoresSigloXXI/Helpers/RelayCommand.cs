@@ -8,6 +8,7 @@ namespace MantenedoresSigloXXI.Helpers
         private readonly Action _execute;
 
         private readonly Func<bool> _canExecute;
+        private object v;
 
         public event EventHandler CanExecuteChanged;
 
@@ -20,6 +21,11 @@ namespace MantenedoresSigloXXI.Helpers
         {
             _execute = execute ?? throw new ArgumentNullException(nameof(execute));
             _canExecute = canExecute;
+        }
+
+        public RelayCommand(object v)
+        {
+            this.v = v;
         }
 
         public bool CanExecute(object parameter) => _canExecute == null || _canExecute();

@@ -54,7 +54,19 @@ namespace MantenedoresSigloXXI.ViewModels
                 switch (result)
                 {
                     case MessageBoxResult.OK:
-                        CustomerController.DeleteCustomer(UpdatingCustomer);
+                        int r = CustomerController.DeleteCustomer(UpdatingCustomer);
+                        if (r == 201)
+                        {
+
+
+                            MessageBox.Show(Properties.Resources.CustomerDeleted, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                        }
+                        else
+                        {
+                            MessageBox.Show(Properties.Resources.ErrorMsg, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+
+
+                        }
                         Back();
                         break;
                     case MessageBoxResult.Cancel:
@@ -79,7 +91,19 @@ namespace MantenedoresSigloXXI.ViewModels
                 switch (result)
                 {
                     case MessageBoxResult.OK:
-                        CustomerController.EditCustomer(UpdatingCustomer);
+                        int r = CustomerController.EditCustomer(UpdatingCustomer);
+                        if (r == 201)
+                        {
+
+
+                            MessageBox.Show(Properties.Resources.CustomerUpdated, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                        }
+                        else
+                        {
+                            MessageBox.Show(Properties.Resources.ErrorMsg, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+
+
+                        }
                         Back();
                         break;
                     case MessageBoxResult.Cancel:

@@ -24,10 +24,18 @@ namespace MantenedoresSigloXXI.Controllers
         {
             WebRequest request = WebRequest.Create(ProductsURL);
             request.Method = "GET";
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            try
+            {
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             var encod = ASCIIEncoding.ASCII;
             using var readProducts = new System.IO.StreamReader(response.GetResponseStream(), encod);
             ProductsJSON = readProducts.ReadToEnd();
+        }
+            catch (Exception)
+            {
+
+                return ("");
+            }
             return (ProductsJSON);
 
         }
@@ -42,9 +50,18 @@ namespace MantenedoresSigloXXI.Controllers
         {
             WebRequest request = WebRequest.Create(ProductsURL+Product.Id);
             request.Method = "DELETE";
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
-            return (int)response.StatusCode;
+            try
+            {
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
+                return (int)response.StatusCode;
+            }
+            catch (Exception)
+            {
+
+                return 500;
+            }
+            
 
         }
 
@@ -66,34 +83,56 @@ namespace MantenedoresSigloXXI.Controllers
             {              
                 streamWriter.Write(jsonPayload);
             }
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
-            return (int)response.StatusCode;
+            try
+            {
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
+                Debug.WriteLine((int)response.StatusCode);
+                return (int)response.StatusCode;
+                
+            }
+            catch (Exception)
+            {
+                return 500;
+
+            }
+           
+            
 
         }
 
         public static int AddProduct(Product product)
         {
-            WebRequest request = WebRequest.Create(ProductsURL + product.Id);
-            request.Method = "PUT";
+            WebRequest request = WebRequest.Create(ProductsURL);
+            request.Method = "POST";
             request.ContentType = "application/json";
 
             Dictionary<string, string> newData = new Dictionary<string, string>
             {
-                /*{ "newName", Product.Name},
-                { "newEmail", Product.Email},
-                { "newLastName", Product.LastName}*/
+                { "name", product.Name},
+                { "quantity", product.Quantity.ToString()},
             };
 
             string jsonPayload = JsonConvert.SerializeObject(newData, Formatting.Indented);
+            Debug.WriteLine(jsonPayload);
 
             using (var streamWriter = new StreamWriter(request.GetRequestStream()))
             {
                 streamWriter.Write(jsonPayload);
             }
-            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
-            Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
-            return (int)response.StatusCode;
+            try
+            {
+                HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+                Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
+                return (int)response.StatusCode;
+            }
+            catch (Exception)
+            {
+                Debug.WriteLine("RESPONSE STATUS CODE: 500");
+
+            }
+            
+            return 500;
 
         }
     }

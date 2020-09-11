@@ -24,6 +24,7 @@ namespace MantenedoresSigloXXI.ViewModels
         public List<Product> Products;
 
         private ICommand _productUpdateCommand;
+        private ICommand _newProductCommand;
         private void OnProductUpdateInvoked()
         {
             if (_selected != null)
@@ -35,7 +36,16 @@ namespace MantenedoresSigloXXI.ViewModels
                 MessageBox.Show(Properties.Resources.WarningMsgBoxChooseOneProduct, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
             }
         }
+
+        private void OnNewProductInvoked()
+        {
+            
+                NavigateTo(typeof(NewProductViewModel));
+            
+        }
         public ICommand ProductUpdateCommand => _productUpdateCommand ?? (_productUpdateCommand = new RelayCommand(OnProductUpdateInvoked));
+        public ICommand NewProductCommand => _newProductCommand ?? (_newProductCommand = new RelayCommand(OnNewProductInvoked));
+
         public Product Selected
         {
             get { return _selected; }
