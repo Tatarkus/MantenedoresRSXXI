@@ -21,6 +21,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy %282%29 - Copy.xaml.cs">
+      <DependentUpon>ProductUpdatePage - Copy (2).xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy %282%29.xaml.cs">
+      <DependentUpon>ProductUpdatePage.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy %283%29.xaml.cs">
+      <DependentUpon>ProductUpdatePage.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy - Copy %282%29.xaml.cs">
+      <DependentUpon>ProductUpdatePage - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy - Copy - Copy.xaml.cs">
+      <DependentUpon>ProductUpdatePage - Copy - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy - Copy.xaml.cs">
+      <DependentUpon>ProductUpdatePage - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ProductUpdatePage - Copy.xaml.cs">
+      <DependentUpon>ProductUpdatePage.xaml.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

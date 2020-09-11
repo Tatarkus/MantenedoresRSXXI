@@ -56,15 +56,39 @@ namespace MantenedoresSigloXXI.Controllers
 
             Dictionary<string, string> newData = new Dictionary<string, string>
                 {
-                    /*{ "newName", Product.Name},
-                    { "newEmail", Product.Email},
-                    { "newLastName", Product.LastName}*/
+                    { "name", product.Name},
+                    { "quantity", product.Quantity.ToString()}
                 };
 
             string jsonPayload = JsonConvert.SerializeObject(newData, Formatting.Indented);
 
             using (var streamWriter = new StreamWriter(request.GetRequestStream()))
             {              
+                streamWriter.Write(jsonPayload);
+            }
+            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            Debug.WriteLine("RESPONSE STATUS CODE: " + response.StatusCode);
+            return (int)response.StatusCode;
+
+        }
+
+        public static int AddProduct(Product product)
+        {
+            WebRequest request = WebRequest.Create(ProductsURL + product.Id);
+            request.Method = "PUT";
+            request.ContentType = "application/json";
+
+            Dictionary<string, string> newData = new Dictionary<string, string>
+            {
+                /*{ "newName", Product.Name},
+                { "newEmail", Product.Email},
+                { "newLastName", Product.LastName}*/
+            };
+
+            string jsonPayload = JsonConvert.SerializeObject(newData, Formatting.Indented);
+
+            using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+            {
                 streamWriter.Write(jsonPayload);
             }
             HttpWebResponse response = request.GetResponse() as HttpWebResponse;

@@ -133,6 +133,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Añadir un producto.
+        /// </summary>
+        public static string CreateProduct {
+            get {
+                return ResourceManager.GetString("CreateProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Campo.
         /// </summary>
         public static string CustomerField {
@@ -300,6 +309,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string OtrosPageTitle {
             get {
                 return ResourceManager.GetString("OtrosPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string ProductCreatePage {
+            get {
+                return ResourceManager.GetString("ProductCreatePage", resourceCulture);
             }
         }
         
@@ -606,6 +624,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string WarningMsgBoxInvalidName {
             get {
                 return ResourceManager.GetString("WarningMsgBoxInvalidName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to La cantidad no es valida. Debe ser un número menor a 99.999.
+        /// </summary>
+        public static string WarningMsgBoxInvalidQuantity {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxInvalidQuantity", resourceCulture);
             }
         }
         

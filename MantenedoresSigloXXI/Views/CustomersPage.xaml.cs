@@ -12,12 +12,13 @@ namespace MantenedoresSigloXXI.Views
         {
             DataContext = viewModel;
             InitializeComponent();
-            
 
-           // CustomersDG.ItemsSource = viewModel.Customers;
-            
+            // CustomersDG.ItemsSource = viewModel.Customers;
+
 
         }
+
+        
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -63,5 +64,12 @@ namespace MantenedoresSigloXXI.Views
         {
             
         }
+
+        private void CustomersDG_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+
     }
 }

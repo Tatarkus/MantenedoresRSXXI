@@ -141,6 +141,9 @@
   <data name="ButtonEdit" xml:space="preserve">
     <value>Update</value>
   </data>
+  <data name="CreateProduct" xml:space="preserve">
+    <value>Add a new product</value>
+  </data>
   <data name="CustomerField" xml:space="preserve">
     <value>Field</value>
   </data>
@@ -299,6 +302,9 @@
   </data>
   <data name="WarningMsgBoxInvalidName" xml:space="preserve">
     <value>The name is not valid</value>
+  </data>
+  <data name="WarningMsgBoxInvalidQuantity" xml:space="preserve">
+    <value>Not a valid quantity</value>
   </data>
   <data name="WarningMsgBoxTitle" xml:space="preserve">
     <value>Warning!</value>

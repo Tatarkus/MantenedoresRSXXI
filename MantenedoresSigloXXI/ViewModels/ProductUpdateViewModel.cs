@@ -92,32 +92,19 @@ namespace MantenedoresSigloXXI.ViewModels
 
         public bool IsValid()
         {
-            /*if (originalProduct.Name == updatingProduct.Name &&
-                originalProduct.Email == updatingProduct.Email &&
-                originalProduct.LastName == updatingProduct.LastName)
+            if (originalProduct.Name == updatingProduct.Name &&
+                originalProduct.Quantity == updatingProduct.Quantity)
             {
                 Debug.WriteLine("son iguales");
                 Back();
                 return false;
-            }
-            var email = new EmailAddressAttribute();
-            if (!email.IsValid(updatingProduct.Email))
-            {
-                MessageBox.Show(Properties.Resources.WarningMsgBoxInvalidEmail,Properties.Resources.WarningMsgBoxTitle , MessageBoxButton.OK);
-                return false;
-            }
-
-            if (!Regex.IsMatch(updatingProduct.Name, @"^[a-zA-Z]+$"))
-            {
-                MessageBox.Show(Properties.Resources.WarningMsgBoxInvalidName, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
-                return false;
-            }
+            }       
                 
-            if (!Regex.IsMatch(updatingProduct.LastName, @"^[a-zA-Z]+$"))
+            if (!Regex.IsMatch(updatingProduct.Quantity.ToString(), @"^[0-9]\d{0,5}$"))
             {
-                MessageBox.Show(Properties.Resources.WarningMsgBoxInvalidLastName, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                MessageBox.Show(Properties.Resources.WarningMsgBoxInvalidQuantity, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
                 return false;
-            }*/
+            }
             return true;
         }
 
@@ -131,7 +118,8 @@ namespace MantenedoresSigloXXI.ViewModels
             UpdatingProduct = (Product)sender;
             originalProduct = new Product
             {
-                //UpdatingProduct;
+                Name = UpdatingProduct.Name,
+                Quantity = UpdatingProduct.Quantity,
             };
 
         }

@@ -18,11 +18,11 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition MinWidth="96" MaxWidth="240" Width="*" />
-                <ColumnDefinition MinWidth="160" MaxWidth="240" Width="*" />
-                <ColumnDefinition MinWidth="80" MaxWidth="240" Width="90" />
-                <ColumnDefinition MinWidth="180" MaxWidth="240" Width="180" />
-                <ColumnDefinition  Width="*" />
+                <ColumnDefinition MinWidth="96" MaxWidth="600" Width="*" />
+                <ColumnDefinition MinWidth="96" MaxWidth="190" Width="110" />
+                <ColumnDefinition MinWidth="80" MaxWidth="110" Width="90" />
+                <ColumnDefinition MinWidth="90" MaxWidth="240" Width="180" />
+                <ColumnDefinition MinWidth="90" MaxWidth="240" Width="*" />
             </Grid.ColumnDefinitions>
 
             <TextBlock
@@ -32,7 +32,7 @@
                 Text="{x:Static properties:Resources.CustomersPageTitle}"
                 TextWrapping="NoWrap"/>
 
-            <TextBox x:Name="tbFilter" Grid.Column="3" HorizontalAlignment="Center" Text="" TextWrapping="Wrap"  VerticalAlignment="Center" Width="175" Height="30" TextChanged="TextBox_TextChanged"/>
+            <TextBox x:Name="tbFilter" Grid.Column="3" Text="" TextWrapping="Wrap"  VerticalAlignment="Center" Height="30" TextChanged="TextBox_TextChanged" Margin="2,0,2,0"/>
             <TextBlock Style="{StaticResource PageTitleStyle}" Text="{x:Static properties:Resources.LabelSearch}" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap"/>
             <Grid Grid.Column="2">
                 <Grid.RowDefinitions>
@@ -43,9 +43,9 @@
                 <RadioButton x:Name="rbFilterByUsername" Content="{x:Static properties:Resources.CustomersFilterByUsername}" Grid.Row="0" HorizontalAlignment="Left"  VerticalAlignment="Center" Checked="RadioButton_Checked" IsChecked="True" />
                 <RadioButton x:Name="rbFilterByName" Content="{x:Static properties:Resources.CustomersFilterByName}" Grid.Row="1" HorizontalAlignment="Left"  VerticalAlignment="Center" Checked="rbFilterByName_Checked"/>
             </Grid>
-            <Button Content="{x:Static properties:Resources.ButtonClear}" Grid.Column="4" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="{x:Static properties:Resources.ButtonClear}" Grid.Column="4"  VerticalAlignment="Center" Click="Button_Click" Margin="52,0,52,0"/>
         </Grid>
-        <DataGrid x:Name="CustomersDG" ItemsSource="{Binding Path=ListOfCustomers}" Margin="0,10,0,0" Grid.Row="1" SelectedItem="{Binding Selected}" IsReadOnly="True" SelectedIndex="0" />
-        <Button Command="{Binding CustomerUpdateCommand}" x:Name="btnEditCustomer" Content="{x:Static properties:Resources.ButtonEdit}" HorizontalAlignment="Left" Margin="624,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Click="btnEditCustomer_Click" Width="100"/>
+        <DataGrid x:Name="CustomersDG" ItemsSource="{Binding Path=ListOfCustomers}" Margin="0,10,0,0" Grid.Row="1" SelectedItem="{Binding Selected}" IsReadOnly="True" SelectedIndex="0" ColumnWidth="*" SelectionChanged="CustomersDG_SelectionChanged" HorizontalGridLinesBrush="#FF5989F0" />
+        <Button Command="{Binding CustomerUpdateCommand}" x:Name="btnEditCustomer" Content="{x:Static properties:Resources.ButtonEdit}" Margin="0,0,76,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Click="btnEditCustomer_Click" HorizontalAlignment="Right" Width="100"/>
     </Grid>
 </Page>
