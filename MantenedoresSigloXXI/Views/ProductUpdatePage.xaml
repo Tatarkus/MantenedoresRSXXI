@@ -61,19 +61,14 @@
 
 
 
-            <Label Content="lol" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Bottom" Height="34" Width="89"/>
-            <TextBox Grid.Column="2" Grid.Row="6" Text="{Binding UpdatingProduct.Username}" TextWrapping="Wrap" VerticalAlignment="Center" IsEnabled="False"/>
+            <Label Content="{x:Static properties:Resources.ProductFieldCreado}" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Bottom" Height="34" Width="89"/>
+            <TextBox Grid.Column="2" Grid.Row="6" Text="{Binding UpdatingProduct.CreatedAt}" TextWrapping="Wrap" VerticalAlignment="Center" IsEnabled="False"/>
 
+            <Label Content="{x:Static properties:Resources.ProductFieldQuantity}" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Bottom" Height="34" Width="56"/>
+            <TextBox Grid.Column="4" Grid.Row="4" Text="{Binding UpdatingProduct.Quanitity}" TextWrapping="{Binding UpdatingProduct.LastName}" VerticalAlignment="Center" Margin="0,0,1,0"/>
 
-
-            <Label Content="sdasd" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Bottom" Height="34" Width="56"/>
-            <TextBox Grid.Column="4" Grid.Row="2" Text="{Binding UpdatingProduct.Email}" TextWrapping="Wrap" VerticalAlignment="Center" TextChanged="TextBox_TextChanged"/>
-
-            <Label Content="help" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Bottom" Height="34" Width="56"/>
-            <TextBox Grid.Column="4" Grid.Row="4" Text="{Binding UpdatingProduct.LastName}" TextWrapping="{Binding UpdatingProduct.LastName}" VerticalAlignment="Center" Margin="0,0,1,0"/>
-
-            <Label Content="me" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Height="34" Width="175" Margin="1,9,0,0"/>
-            <TextBox Grid.Column="4" Grid.Row="6" Text="{Binding UpdatingProduct.UserType}" TextWrapping="Wrap" VerticalAlignment="Center" IsEnabled="False"/>
+            <Label Content="{x:Static properties:Resources.ProductFieldUpdated}" Grid.Column="4" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Height="34" Width="175" Margin="1,9,0,0"/>
+            <TextBox Grid.Column="4" Grid.Row="6" Text="{Binding UpdatingProduct.UpdatedAt}" TextWrapping="Wrap" VerticalAlignment="Center" IsEnabled="False"/>
         </Grid>
         <Grid Grid.Row="2">
             <Button Foreground="Red" Command="{Binding DeleteProduct}" x:Name="btnDelete" Content="{x:Static properties:Resources.ButtonDelete}" HorizontalAlignment="Center"  Grid.Column="1" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Normal" Background="White" Click="btnDelete_Click"/>

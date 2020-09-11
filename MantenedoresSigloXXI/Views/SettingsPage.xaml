@@ -91,7 +91,7 @@
                             FontSize="{StaticResource MediumFontSize}" IsChecked="True">
                                 <i:Interaction.Triggers>
                                     <i:EventTrigger EventName="Checked">
-                                        <i:InvokeCommandAction Command="{Binding SetLanguageCommand}" CommandParameter="en-ES" />
+                                        <i:InvokeCommandAction Command="{Binding SetLanguageCommand}" CommandParameter="es" />
                                     </i:EventTrigger>
                                 </i:Interaction.Triggers>
                             </RadioButton>

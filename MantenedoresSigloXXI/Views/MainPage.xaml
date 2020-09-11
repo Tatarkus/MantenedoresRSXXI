@@ -21,6 +21,9 @@
             Grid.Row="1"
             Margin="{StaticResource MediumLeftRightMargin}"
             Background="{DynamicResource MahApps.Brushes.Gray10}">
+            <TextBlock Style="{StaticResource PageTitleStyle}" HorizontalAlignment="Center"  Text="Restaurant Siglo XXI" TextWrapping="Wrap" VerticalAlignment="Top"  />
+            <TextBlock Style="{StaticResource PageTitleStyle}" HorizontalAlignment="Center" Text="{x:Static properties:Resources.WelcomeMsg}" TextWrapping="Wrap" VerticalAlignment="Top" Margin="55,148,0,0"/>
+            <TextBlock Style="{StaticResource PageTitleStyle}" x:Name="myDateTime" Text="TEST" VerticalAlignment="Bottom" HorizontalAlignment="Center"  Height="29"/>
             <!--
             The Mahapps Gray10 color represents where you should place your content.
             Place your content here.

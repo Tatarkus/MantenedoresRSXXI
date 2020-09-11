@@ -9,16 +9,19 @@ namespace MantenedoresSigloXXI.Models
     {
         [JsonProperty("id")]
         public int Id { get; set; }
+
         [JsonProperty("name")]
         public string Name { get; set; }
-        [JsonProperty("lastName")]
-        public string LastName { get; set; }
-        [JsonProperty("email")]
-        public string Email { get; set; }
-        [JsonProperty("username")]
-        public string Username { get; set; }
-        [JsonProperty("roleId")]
-        public int UserType { get; set; }
+
+        [JsonProperty("quantity")]
+        public int Quantity { get; set; }
+            
+        [JsonProperty("createdAt")]
+        public DateTime CreatedAt { get; set; }
+
+        [JsonProperty("updatedAt")]
+        public DateTime UpdatedAt { get; set; }
+
     }
 
 }

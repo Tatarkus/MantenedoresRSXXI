@@ -92,6 +92,9 @@ namespace MantenedoresSigloXXI
             services.AddTransient<CustomerUpdateViewModel>();
             services.AddTransient<CustomerUpdatePage>();
 
+            services.AddTransient<ProductUpdateViewModel>();
+            services.AddTransient<ProductUpdatePage>();
+
             // Configuration
             services.Configure<AppConfig>(context.Configuration.GetSection(nameof(AppConfig)));
         }

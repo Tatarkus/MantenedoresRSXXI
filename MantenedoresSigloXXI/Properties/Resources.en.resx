@@ -198,11 +198,20 @@
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
   </data>
+  <data name="ProductFieldCreado" xml:space="preserve">
+    <value>Created a</value>
+  </data>
   <data name="ProductFieldId" xml:space="preserve">
     <value>Id</value>
   </data>
   <data name="ProductFieldName" xml:space="preserve">
     <value>Name</value>
+  </data>
+  <data name="ProductFieldQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="ProductFieldUpdated" xml:space="preserve">
+    <value>Updated at</value>
   </data>
   <data name="ProductFilterById" xml:space="preserve">
     <value>Id</value>
@@ -264,6 +273,9 @@
   <data name="UpdateCustomerPageTitle" xml:space="preserve">
     <value>Update Customer</value>
   </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version 0.11</value>
+  </data>
   <data name="WarningMsgBoxChooseOneCustomer" xml:space="preserve">
     <value>You must pick a customer</value>
   </data>
@@ -290,5 +302,8 @@
   </data>
   <data name="WarningMsgBoxTitle" xml:space="preserve">
     <value>Warning!</value>
+  </data>
+  <data name="WelcomeMsg" xml:space="preserve">
+    <value>Welcome to the administration software of the restaurant "Siglo XXI"</value>
   </data>
 </root>

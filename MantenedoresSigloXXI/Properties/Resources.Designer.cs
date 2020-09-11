@@ -277,7 +277,7 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Main.
+        ///   Looks up a localized string similar to Principal.
         /// </summary>
         public static string MainPageTitle {
             get {
@@ -304,6 +304,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fecha creación.
+        /// </summary>
+        public static string ProductFieldCreado {
+            get {
+                return ResourceManager.GetString("ProductFieldCreado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Id.
         /// </summary>
         public static string ProductFieldId {
@@ -318,6 +327,24 @@ namespace MantenedoresSigloXXI.Properties {
         public static string ProductFieldName {
             get {
                 return ResourceManager.GetString("ProductFieldName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cantidad.
+        /// </summary>
+        public static string ProductFieldQuantity {
+            get {
+                return ResourceManager.GetString("ProductFieldQuantity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fecha modificación.
+        /// </summary>
+        public static string ProductFieldUpdated {
+            get {
+                return ResourceManager.GetString("ProductFieldUpdated", resourceCulture);
             }
         }
         
@@ -502,6 +529,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Versión 0.11.
+        /// </summary>
+        public static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Debe seleccionar un cliente.
         /// </summary>
         public static string WarningMsgBoxChooseOneCustomer {
@@ -579,6 +615,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string WarningMsgBoxTitle {
             get {
                 return ResourceManager.GetString("WarningMsgBoxTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bienvenido al software de mantenedores del restaurant &quot;Siglo XXI&quot;!.
+        /// </summary>
+        public static string WelcomeMsg {
+            get {
+                return ResourceManager.GetString("WelcomeMsg", resourceCulture);
             }
         }
     }

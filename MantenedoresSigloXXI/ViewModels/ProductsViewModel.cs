@@ -109,7 +109,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
             foreach (Product p in Products)
             {
-                if (p.Name.StartsWith(filterBy) || p.LastName.StartsWith(filterBy))
+                if (p.Name.StartsWith(filterBy) || p.Name.Contains(filterBy))
                 {
                     ListOfProducts.Add(p);
                 }
