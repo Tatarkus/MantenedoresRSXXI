@@ -270,6 +270,15 @@
   <data name="WarningMsgBoxTitle" xml:space="preserve">
     <value>Advertencia!</value>
   </data>
+  <data name="EditProduct" xml:space="preserve">
+    <value>Editar información de Insumo</value>
+  </data>
+  <data name="ProductFieldId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ProductFieldName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
   <data name="ProductFilterById" xml:space="preserve">
     <value>Id</value>
   </data>

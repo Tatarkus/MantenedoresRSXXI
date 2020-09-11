@@ -177,6 +177,9 @@
   <data name="EditCustomer" xml:space="preserve">
     <value>Customer Information</value>
   </data>
+  <data name="EditProduct" xml:space="preserve">
+    <value>Update product information</value>
+  </data>
   <data name="LabelSearch" xml:space="preserve">
     <value>Search:</value>
   </data>
@@ -194,6 +197,12 @@
   </data>
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
+  </data>
+  <data name="ProductFieldId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ProductFieldName" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="ProductFilterById" xml:space="preserve">
     <value>Id</value>

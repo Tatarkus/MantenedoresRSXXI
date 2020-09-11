@@ -241,6 +241,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Editar información de Insumo.
+        /// </summary>
+        public static string EditProduct {
+            get {
+                return ResourceManager.GetString("EditProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Buscar:.
         /// </summary>
         public static string LabelSearch {
@@ -291,6 +300,24 @@ namespace MantenedoresSigloXXI.Properties {
         public static string OtrosPageTitle {
             get {
                 return ResourceManager.GetString("OtrosPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Id.
+        /// </summary>
+        public static string ProductFieldId {
+            get {
+                return ResourceManager.GetString("ProductFieldId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        public static string ProductFieldName {
+            get {
+                return ResourceManager.GetString("ProductFieldName", resourceCulture);
             }
         }
         
