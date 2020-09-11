@@ -32,7 +32,7 @@ namespace MantenedoresSigloXXI.ViewModels
             }
             else
             {
-                MessageBox.Show(Properties.Resources.WarningMsgBoxChooseOne, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                MessageBox.Show(Properties.Resources.WarningMsgBoxChooseOneCustomer, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
             }
         }
         public ICommand CustomerUpdateCommand => _customerUpdateCommand ?? (_customerUpdateCommand = new RelayCommand(OnCustomerUpdateInvoked));

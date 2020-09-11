@@ -50,7 +50,7 @@ namespace MantenedoresSigloXXI.ViewModels
         {
             if(UpdatingCustomer != null)
             {
-                MessageBoxResult result = MessageBox.Show(Properties.Resources.WarningMsgBoxDelete, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OKCancel);
+                MessageBoxResult result = MessageBox.Show(Properties.Resources.WarningMsgBoxDeleteCustomer, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OKCancel);
                 switch (result)
                 {
                     case MessageBoxResult.OK:
@@ -64,7 +64,7 @@ namespace MantenedoresSigloXXI.ViewModels
             }
             else
             {
-                MessageBox.Show(Properties.Resources.WarningMsgBoxChooseOne, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
+                MessageBox.Show(Properties.Resources.WarningMsgBoxChooseOneCustomer, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
             }
             
             

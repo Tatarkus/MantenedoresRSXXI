@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AppDisplayName" xml:space="preserve">
-    <value>CRUD Restaurant Siglo XXI</value>
+    <value>Administration Restaurant Siglo XXI</value>
   </data>
   <data name="ButtonAccept" xml:space="preserve">
     <value>Accept</value>
@@ -139,7 +139,7 @@
     <value>DELETE</value>
   </data>
   <data name="ButtonEdit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Update</value>
   </data>
   <data name="CustomerField" xml:space="preserve">
     <value>Field</value>
@@ -162,6 +162,9 @@
   <data name="CustomerFieldUsername" xml:space="preserve">
     <value>Username</value>
   </data>
+  <data name="CustomerFieldUsertype" xml:space="preserve">
+    <value>User Type</value>
+  </data>
   <data name="CustomersFilterByName" xml:space="preserve">
     <value>Name</value>
   </data>
@@ -169,7 +172,7 @@
     <value>Username</value>
   </data>
   <data name="CustomersPageTitle" xml:space="preserve">
-    <value>Customers</value>
+    <value>CUSTOMERS</value>
   </data>
   <data name="EditCustomer" xml:space="preserve">
     <value>Customer Information</value>
@@ -192,23 +195,29 @@
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
   </data>
+  <data name="ProductFilterById" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ProductFilterByName" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <data name="ProductsPageTitle" xml:space="preserve">
     <value>Products</value>
   </data>
   <data name="SelectLanguage" xml:space="preserve">
-    <value>Select a language</value>
+    <value>Pick a language</value>
   </data>
   <data name="SettingsPageAboutText" xml:space="preserve">
-    <value>Administration Software for the Restaurant "Siglo XXI"</value>
+    <value>Software for data maintenance for the restaurant "Siglo XXI"</value>
   </data>
   <data name="SettingsPageAboutTitle" xml:space="preserve">
     <value>About this application</value>
   </data>
   <data name="SettingsPageChooseThemeText" xml:space="preserve">
-    <value>Select a theme</value>
+    <value>Pick a theme</value>
   </data>
   <data name="SettingsPagePersonalizationTitle" xml:space="preserve">
-    <value>Personalization</value>
+    <value>Customization</value>
   </data>
   <data name="SettingsPagePrivacyStatementText" xml:space="preserve">
     <value>Privacy</value>
@@ -244,6 +253,33 @@
     <value>Settings</value>
   </data>
   <data name="UpdateCustomerPageTitle" xml:space="preserve">
-    <value>Edit Customer Information</value>
+    <value>Update Customer</value>
+  </data>
+  <data name="WarningMsgBoxChooseOneCustomer" xml:space="preserve">
+    <value>You must pick a customer</value>
+  </data>
+  <data name="WarningMsgBoxChooseOneProduct" xml:space="preserve">
+    <value>You must pick a product</value>
+  </data>
+  <data name="WarningMsgBoxDeleteCustomer" xml:space="preserve">
+    <value>Are you sure you wish to delete the customer?</value>
+  </data>
+  <data name="WarningMsgBoxDeleteProduct" xml:space="preserve">
+    <value>Are you sure you wish to delete the product?</value>
+  </data>
+  <data name="WarningMsgBoxEdit" xml:space="preserve">
+    <value>All data will be saved</value>
+  </data>
+  <data name="WarningMsgBoxInvalidEmail" xml:space="preserve">
+    <value>The email is not valid</value>
+  </data>
+  <data name="WarningMsgBoxInvalidLastName" xml:space="preserve">
+    <value>The last name is not valid</value>
+  </data>
+  <data name="WarningMsgBoxInvalidName" xml:space="preserve">
+    <value>The name is not valid</value>
+  </data>
+  <data name="WarningMsgBoxTitle" xml:space="preserve">
+    <value>Warning!</value>
   </data>
 </root>

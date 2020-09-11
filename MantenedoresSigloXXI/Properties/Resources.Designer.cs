@@ -295,6 +295,24 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Id.
+        /// </summary>
+        public static string ProductFilterById {
+            get {
+                return ResourceManager.GetString("ProductFilterById", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nombre.
+        /// </summary>
+        public static string ProductFilterByName {
+            get {
+                return ResourceManager.GetString("ProductFilterByName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Insumos.
         /// </summary>
         public static string ProductsPageTitle {
@@ -459,18 +477,36 @@ namespace MantenedoresSigloXXI.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Debe seleccionar un cliente.
         /// </summary>
-        public static string WarningMsgBoxChooseOne {
+        public static string WarningMsgBoxChooseOneCustomer {
             get {
-                return ResourceManager.GetString("WarningMsgBoxChooseOne", resourceCulture);
+                return ResourceManager.GetString("WarningMsgBoxChooseOneCustomer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debe seleccionar un insumo.
+        /// </summary>
+        public static string WarningMsgBoxChooseOneProduct {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxChooseOneProduct", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ¿Está seguro que desea borrar al cliente?.
         /// </summary>
-        public static string WarningMsgBoxDelete {
+        public static string WarningMsgBoxDeleteCustomer {
             get {
-                return ResourceManager.GetString("WarningMsgBoxDelete", resourceCulture);
+                return ResourceManager.GetString("WarningMsgBoxDeleteCustomer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ¿Está seguro que desea borrar el insumo?.
+        /// </summary>
+        public static string WarningMsgBoxDeleteProduct {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxDeleteProduct", resourceCulture);
             }
         }
         
