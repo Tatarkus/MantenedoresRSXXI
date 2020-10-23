@@ -21,7 +21,7 @@ namespace MantenedoresSigloXXI.ViewModels
         private readonly INavigationService _navigationService;
         private ICommand _addCTable;
 
-        public ICommand AddCTable => _addCTable ?? (_addCTable = new RelayCommand(OnAddCTable));
+        public ICommand AddCTable => _addCTable ?? (_addCTable = new RelayCommand(newTable));
       
         // Product _updatingProduct;
         //Observable name = new Observable();
@@ -47,7 +47,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
       
 
-        private void OnAddCTable()
+        private void newTable()
         {
             
             if(IsValid())

@@ -102,7 +102,7 @@ namespace MantenedoresSigloXXI.Controllers
 
         }
 
-        public static int AddCTable(CTable ctable)
+        public static int addTable(CTable ctable)
         {
             WebRequest request = WebRequest.Create(CTablesURL);
             request.Method = "POST";
