@@ -144,6 +144,18 @@
   <data name="CreateProduct" xml:space="preserve">
     <value>Add a new product</value>
   </data>
+  <data name="CTableCreated" xml:space="preserve">
+    <value>Table created successfuly</value>
+  </data>
+  <data name="CTableDeleted" xml:space="preserve">
+    <value>The table has been successfuly deleted</value>
+  </data>
+  <data name="CTablesFilterById" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CTableUpdated" xml:space="preserve">
+    <value>This table has been updated successfuly</value>
+  </data>
   <data name="CustomerDeleted" xml:space="preserve">
     <value>Customer deleted!</value>
   </data>
@@ -183,6 +195,9 @@
   <data name="CustomerUpdated" xml:space="preserve">
     <value>Customer updated!</value>
   </data>
+  <data name="EditCTable" xml:space="preserve">
+    <value>Updating table</value>
+  </data>
   <data name="EditCustomer" xml:space="preserve">
     <value>Customer Information</value>
   </data>
@@ -203,6 +218,9 @@
   </data>
   <data name="MainPageTitle" xml:space="preserve">
     <value>Main</value>
+  </data>
+  <data name="NewCTable" xml:space="preserve">
+    <value>Add table</value>
   </data>
   <data name="NewCustomer" xml:space="preserve">
     <value>New Customer</value>
@@ -291,6 +309,24 @@
   <data name="ShellSettingsPage" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="ShellTablesPage" xml:space="preserve">
+    <value>Tables</value>
+  </data>
+  <data name="TableFieldCapacity" xml:space="preserve">
+    <value>Seats</value>
+  </data>
+  <data name="TableFieldCustomerId" xml:space="preserve">
+    <value>Customer ID</value>
+  </data>
+  <data name="TableFieldId" xml:space="preserve">
+    <value>Table ID</value>
+  </data>
+  <data name="TableFieldWaiterId" xml:space="preserve">
+    <value>Waiter ID</value>
+  </data>
+  <data name="TablesPageTitle" xml:space="preserve">
+    <value>Tables</value>
+  </data>
   <data name="UpdateCustomerPageTitle" xml:space="preserve">
     <value>Update Customer</value>
   </data>
@@ -302,6 +338,12 @@
   </data>
   <data name="WarningMsgBoxChooseOneProduct" xml:space="preserve">
     <value>You must pick a product</value>
+  </data>
+  <data name="WarningMsgBoxChooseOneTable" xml:space="preserve">
+    <value>You must pick a table first</value>
+  </data>
+  <data name="WarningMsgBoxDeleteCTable" xml:space="preserve">
+    <value>Are you sure you wish to delete the table?</value>
   </data>
   <data name="WarningMsgBoxDeleteCustomer" xml:space="preserve">
     <value>Are you sure you wish to delete the customer?</value>

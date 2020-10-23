@@ -40,6 +40,7 @@ namespace MantenedoresSigloXXI.ViewModels
             new HamburgerMenuGlyphItem() { Label = Resources.ShellMainPage,     Glyph = "\ue80f", TargetPageType = typeof(MainViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellCustomersPage, Glyph = "\ue716", TargetPageType = typeof(CustomersViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellProductsPage, Glyph = "\ue719", TargetPageType = typeof(ProductsViewModel) },
+            new HamburgerMenuGlyphItem() { Label = Resources.ShellTablesPage, Glyph = "\uea37", TargetPageType = typeof(CTablesViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellOtrosPage, Glyph = "\uea37", TargetPageType = typeof(OtrosViewModel) },
         };
 

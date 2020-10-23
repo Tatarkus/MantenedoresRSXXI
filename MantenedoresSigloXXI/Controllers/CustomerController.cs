@@ -11,7 +11,7 @@ namespace MantenedoresSigloXXI.Controllers
 {
     public static class CustomerController
     {
-        private static readonly string CustomersURL = "http://54.207.113.65:3001/api/v1/admin/customers/";
+        private static readonly string CustomersURL = "http://18.229.150.241:3001/api/v1/admin/customers/";
         public static string CustomersJSON = "";
 
         public class CustomerJson

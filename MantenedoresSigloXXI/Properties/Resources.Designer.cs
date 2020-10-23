@@ -142,6 +142,42 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Se ha creado una nueva mesa.
+        /// </summary>
+        public static string CTableCreated {
+            get {
+                return ResourceManager.GetString("CTableCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se ha borrado la mesa exitosamente.
+        /// </summary>
+        public static string CTableDeleted {
+            get {
+                return ResourceManager.GetString("CTableDeleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string CTablesFilterById {
+            get {
+                return ResourceManager.GetString("CTablesFilterById", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se ha actualizado la mesa!.
+        /// </summary>
+        public static string CTableUpdated {
+            get {
+                return ResourceManager.GetString("CTableUpdated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cliente eliminado con éxito.
         /// </summary>
         public static string CustomerDeleted {
@@ -259,6 +295,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Modificando mesa.
+        /// </summary>
+        public static string EditCTable {
+            get {
+                return ResourceManager.GetString("EditCTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Datos del Cliente.
         /// </summary>
         public static string EditCustomer {
@@ -318,6 +363,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string MainPageTitle {
             get {
                 return ResourceManager.GetString("MainPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Agregar mesa.
+        /// </summary>
+        public static string NewCTable {
+            get {
+                return ResourceManager.GetString("NewCTable", resourceCulture);
             }
         }
         
@@ -601,6 +655,60 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mesas.
+        /// </summary>
+        public static string ShellTablesPage {
+            get {
+                return ResourceManager.GetString("ShellTablesPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asientos.
+        /// </summary>
+        public static string TableFieldCapacity {
+            get {
+                return ResourceManager.GetString("TableFieldCapacity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Cliente.
+        /// </summary>
+        public static string TableFieldCustomerId {
+            get {
+                return ResourceManager.GetString("TableFieldCustomerId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Mesa.
+        /// </summary>
+        public static string TableFieldId {
+            get {
+                return ResourceManager.GetString("TableFieldId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ID Mesero.
+        /// </summary>
+        public static string TableFieldWaiterId {
+            get {
+                return ResourceManager.GetString("TableFieldWaiterId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mesas.
+        /// </summary>
+        public static string TablesPageTitle {
+            get {
+                return ResourceManager.GetString("TablesPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Editar Cliente.
         /// </summary>
         public static string UpdateCustomerPageTitle {
@@ -633,6 +741,24 @@ namespace MantenedoresSigloXXI.Properties {
         public static string WarningMsgBoxChooseOneProduct {
             get {
                 return ResourceManager.GetString("WarningMsgBoxChooseOneProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debe seleccionar una mesa.
+        /// </summary>
+        public static string WarningMsgBoxChooseOneTable {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxChooseOneTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ¿Está seguro que desea borrar la mesa?.
+        /// </summary>
+        public static string WarningMsgBoxDeleteCTable {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxDeleteCTable", resourceCulture);
             }
         }
         

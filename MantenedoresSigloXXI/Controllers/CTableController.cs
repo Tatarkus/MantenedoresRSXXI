@@ -9,46 +9,46 @@ using System.Text;
 
 namespace MantenedoresSigloXXI.Controllers
 {
-    public static class ProductController
+    public static class CTableController
     {
-        private static readonly string ProductsURL = "http://18.229.150.241:3001/api/v1/admin/products/";
-        public static string ProductsJSON = "";
+        private static readonly string CTablesURL = "http://18.229.150.241:8081/admin/tables/";
+        public static string CTablesJSON = "";
 
-        public class ProductJson
+        public class CTableJson
         {
-            [JsonProperty("Products")]
-            public List<Product> Products { get; set; }
+            [JsonProperty("Tables")]
+            public List<CTable> CTables { get; set; }
         }
 
-        public static string GetProductsJSON()
+        public static string GetCTablesJSON()
         {
-            WebRequest request = WebRequest.Create(ProductsURL);
+            WebRequest request = WebRequest.Create(CTablesURL);
             request.Method = "GET";
             try
             {
                 HttpWebResponse response = request.GetResponse() as HttpWebResponse;
             var encod = ASCIIEncoding.ASCII;
-            using var readProducts = new System.IO.StreamReader(response.GetResponseStream(), encod);
-            ProductsJSON = readProducts.ReadToEnd();
+            using var readCTables = new System.IO.StreamReader(response.GetResponseStream(), encod);
+                CTablesJSON = readCTables.ReadToEnd();
         }
             catch (Exception)
             {
 
                 return ("");
             }
-            return (ProductsJSON);
+            return (CTablesJSON);
 
         }
-        public static List<Product> GetProductsList()
-        {   
-            ProductJson cs =JsonConvert.DeserializeObject<ProductJson>(ProductsJSON);
-            return cs.Products;
-
-        }
-
-        public static int DeleteProduct(Product Product)
+        public static List<CTable> GetCTablesList()
         {
-            WebRequest request = WebRequest.Create(ProductsURL+Product.Id);
+            CTableJson cs =JsonConvert.DeserializeObject<CTableJson>(CTablesJSON);
+            return cs.CTables;
+
+        }
+
+        public static int DeleteCTable(CTable ctable)
+        {
+            WebRequest request = WebRequest.Create(CTablesURL + ctable.Id);
             request.Method = "DELETE";
             try
             {
@@ -65,17 +65,18 @@ namespace MantenedoresSigloXXI.Controllers
 
         }
 
-        public static int EditProduct(Product product)
+        public static int EditCTable(CTable ctable)
         {
-            WebRequest request = WebRequest.Create(ProductsURL + product.Id);
+            WebRequest request = WebRequest.Create(CTablesURL + ctable.Id);
             request.Method = "PUT";
             request.ContentType = "application/json";
 
             Dictionary<string, string> newData = new Dictionary<string, string>
-                {
-                    { "name", product.Name},
-                    { "quantity", product.Quantity.ToString()}
-                };
+            {
+                    { "capacity", ctable.Capacity},
+                    { "customerId", ctable.CustomerId},
+                    { "waiterId", ctable.WaiterId},
+            };
 
             string jsonPayload = JsonConvert.SerializeObject(newData, Formatting.Indented);
 
@@ -101,16 +102,16 @@ namespace MantenedoresSigloXXI.Controllers
 
         }
 
-        public static int AddProduct(Product product)
+        public static int AddCTable(CTable ctable)
         {
-            WebRequest request = WebRequest.Create(ProductsURL);
+            WebRequest request = WebRequest.Create(CTablesURL);
             request.Method = "POST";
             request.ContentType = "application/json";
 
             Dictionary<string, string> newData = new Dictionary<string, string>
             {
-                { "name", product.Name},
-                { "quantity", product.Quantity.ToString()},
+                
+                { "capacity", ctable.Capacity},
             };
 
             string jsonPayload = JsonConvert.SerializeObject(newData, Formatting.Indented);

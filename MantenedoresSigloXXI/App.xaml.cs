@@ -79,9 +79,22 @@ namespace MantenedoresSigloXXI
 
             services.AddTransient<CustomersViewModel>();
             services.AddTransient<CustomersPage>();
+            services.AddTransient<CustomerUpdateViewModel>();
+            services.AddTransient<CustomerUpdatePage>();
 
             services.AddTransient<ProductsViewModel>();
             services.AddTransient<ProductsPage>();
+            services.AddTransient<NewProductViewModel>();
+            services.AddTransient<NewProductPage>();
+            services.AddTransient<ProductUpdateViewModel>();
+            services.AddTransient<ProductUpdatePage>();
+
+            services.AddTransient<CTablesViewModel>();
+            services.AddTransient<CTablesPage>();
+            services.AddTransient<NewCTableViewModel>();
+            services.AddTransient<NewCTablePage>();
+            services.AddTransient<CTableUpdateViewModel>();
+            services.AddTransient<CTableUpdatePage>();
 
             services.AddTransient<OtrosViewModel>();
             services.AddTransient<OtrosPage>();
@@ -89,14 +102,13 @@ namespace MantenedoresSigloXXI
             services.AddTransient<SettingsViewModel>();
             services.AddTransient<SettingsPage>();
 
-            services.AddTransient<CustomerUpdateViewModel>();
-            services.AddTransient<CustomerUpdatePage>();
+            
 
-            services.AddTransient<ProductUpdateViewModel>();
-            services.AddTransient<ProductUpdatePage>();
+            
 
-            services.AddTransient<NewProductViewModel>();
-            services.AddTransient<NewProductPage>();
+            
+
+
 
             // Configuration
             services.Configure<AppConfig>(context.Configuration.GetSection(nameof(AppConfig)));

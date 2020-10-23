@@ -336,4 +336,46 @@
   <data name="ProductUpdated" xml:space="preserve">
     <value>Datos actualizados con éxito</value>
   </data>
+  <data name="CTableCreated" xml:space="preserve">
+    <value>Se ha creado una nueva mesa</value>
+  </data>
+  <data name="CTableDeleted" xml:space="preserve">
+    <value>Se ha borrado la mesa exitosamente</value>
+  </data>
+  <data name="CTablesFilterById" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CTableUpdated" xml:space="preserve">
+    <value>Se ha actualizado la mesa!</value>
+  </data>
+  <data name="ShellTablesPage" xml:space="preserve">
+    <value>Mesas</value>
+  </data>
+  <data name="TablesPageTitle" xml:space="preserve">
+    <value>Mesas</value>
+  </data>
+  <data name="WarningMsgBoxChooseOneTable" xml:space="preserve">
+    <value>Debe seleccionar una mesa</value>
+  </data>
+  <data name="WarningMsgBoxDeleteCTable" xml:space="preserve">
+    <value>¿Está seguro que desea borrar la mesa?</value>
+  </data>
+  <data name="EditCTable" xml:space="preserve">
+    <value>Modificando mesa</value>
+  </data>
+  <data name="NewCTable" xml:space="preserve">
+    <value>Agregar mesa</value>
+  </data>
+  <data name="TableFieldCapacity" xml:space="preserve">
+    <value>Asientos</value>
+  </data>
+  <data name="TableFieldCustomerId" xml:space="preserve">
+    <value>ID Cliente</value>
+  </data>
+  <data name="TableFieldId" xml:space="preserve">
+    <value>ID Mesa</value>
+  </data>
+  <data name="TableFieldWaiterId" xml:space="preserve">
+    <value>ID Mesero</value>
+  </data>
 </root>

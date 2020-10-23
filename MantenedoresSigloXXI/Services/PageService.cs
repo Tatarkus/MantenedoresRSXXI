@@ -26,6 +26,9 @@ namespace MantenedoresSigloXXI.Services
             Configure<CustomerUpdateViewModel, CustomerUpdatePage>();
             Configure<ProductUpdateViewModel, ProductUpdatePage>();
             Configure<NewProductViewModel, NewProductPage>();
+            Configure<CTablesViewModel, CTablesPage>();
+            Configure<NewCTableViewModel, NewCTablePage>();
+            Configure<CTableUpdateViewModel, CTableUpdatePage>();
         }
 
         public Type GetPageType(string key)

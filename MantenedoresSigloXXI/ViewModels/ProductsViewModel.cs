@@ -105,7 +105,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
             foreach (Product p in Products)
             {
-                if (p.Id.ToString() == (filterBy))
+                if ( (p.Id.ToString() == filterBy) || filterBy.Length == 0)
                 {
                     ListOfProducts.Add(p);
                 }
