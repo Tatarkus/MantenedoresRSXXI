@@ -56,6 +56,10 @@ namespace MantenedoresSigloXXI.Views
             e.Handled = regex.IsMatch(e.Text);
         }
 
-
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var v = (CTableUpdateViewModel)DataContext;
+            v.setWaiterId(cbWaiterId.SelectedItem);
+        }
     }
 }

@@ -240,6 +240,9 @@
   <data name="OrderRejected" xml:space="preserve">
     <value>The order has been rejected successfuly</value>
   </data>
+  <data name="OrdersPageTitle" xml:space="preserve">
+    <value>Restock Orders</value>
+  </data>
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
   </data>

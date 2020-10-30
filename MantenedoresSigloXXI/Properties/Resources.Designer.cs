@@ -439,6 +439,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ordenes de reposición.
+        /// </summary>
+        public static string OrdersPageTitle {
+            get {
+                return ResourceManager.GetString("OrdersPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Otros.
         /// </summary>
         public static string OtrosPageTitle {

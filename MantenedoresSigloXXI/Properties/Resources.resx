@@ -399,4 +399,7 @@
   <data name="WarningMsgBoxDeleteOrder" xml:space="preserve">
     <value>¿Seguro que desea rechazar la orden?</value>
   </data>
+  <data name="OrdersPageTitle" xml:space="preserve">
+    <value>Ordenes de reposición</value>
+  </data>
 </root>

@@ -13,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Navigation;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
+using System.Collections.ObjectModel;
 
 namespace MantenedoresSigloXXI.ViewModels
 {
@@ -26,9 +27,14 @@ namespace MantenedoresSigloXXI.ViewModels
         public ICommand DeleteProduct => _deleteProduct ?? (_deleteProduct = new RelayCommand(OnDeleteProduct));
         // Product _updatingProduct;
         //Observable name = new Observable();
+
+        
+
         private Product originalProduct;
         private Product updatingProduct;
         public Product UpdatingProduct
+
+
         {
             get { return updatingProduct; }
             set
@@ -138,6 +144,7 @@ namespace MantenedoresSigloXXI.ViewModels
 
         public void OnNavigatedTo(object sender)
         {
+            
             UpdatingProduct = (Product)sender;
             originalProduct = new Product
             {

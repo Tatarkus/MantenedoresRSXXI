@@ -13,12 +13,14 @@ using System.Windows.Input;
 using System.Windows.Navigation;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
+using System.Collections.ObjectModel;
 
 namespace MantenedoresSigloXXI.ViewModels
 {
     public class CTableUpdateViewModel : Observable, INavigationAware
     {
         private readonly INavigationService _navigationService;
+        public ObservableCollection<Waiter> Waiters { get; private set; } = new ObservableCollection<Waiter>();
         private ICommand _editCTable;
         private ICommand _deleteCTable;
 
@@ -40,6 +42,14 @@ namespace MantenedoresSigloXXI.ViewModels
                 }
             }
         }
+
+        internal void setWaiterId(object selectedItem)
+        {
+            Waiter w = (Waiter)selectedItem;
+            updatingCTable.WaiterId = w.Id.ToString();
+        }
+
+
 
         public CTableUpdateViewModel(INavigationService navigationService)
         {
@@ -139,6 +149,11 @@ namespace MantenedoresSigloXXI.ViewModels
 
         public void OnNavigatedTo(object sender)
         {
+            foreach (var waiter in WaiterController.GetWaiters())
+            {
+                Waiters.Add(waiter);
+            }
+
             UpdatingCTable = (CTable)sender;
             originalCTable = new CTable
             {

@@ -47,7 +47,7 @@
                             Text="{x:Static properties:Resources.ProductFieldCreado}" />
                         <TextBlock
                             Style="{StaticResource BodyTextStyle}"
-                            Text="{Binding createdAt, Mode=OneWay}" />
+                            Text="{Binding CreatedAt, Mode=OneWay}" />
                         <TextBlock
                             Margin="{StaticResource SmallTopMargin}"
                             Style="{StaticResource SubtitleTextStyle}"
@@ -81,7 +81,7 @@
             <TextBlock
                 Style="{StaticResource PageTitleStyle}"
                 Margin="{StaticResource MediumLeftMargin}"
-                Text="{x:Static properties:Resources.OtrosPageTitle}" />
+                Text="{x:Static properties:Resources.OrdersPageTitle}" />
             <ListView
                 Grid.Row="1"
                 ItemsSource="{Binding Orders}"
