@@ -126,6 +126,9 @@
   <data name="ButtonAdd" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="ButtonApprove" xml:space="preserve">
+    <value>Approve</value>
+  </data>
   <data name="ButtonCancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="ButtonEdit" xml:space="preserve">
     <value>Update</value>
+  </data>
+  <data name="ButtonReject" xml:space="preserve">
+    <value>Reject</value>
   </data>
   <data name="CreateProduct" xml:space="preserve">
     <value>Add a new product</value>
@@ -195,6 +201,9 @@
   <data name="CustomerUpdated" xml:space="preserve">
     <value>Customer updated!</value>
   </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
   <data name="EditCTable" xml:space="preserve">
     <value>Updating table</value>
   </data>
@@ -225,6 +234,12 @@
   <data name="NewCustomer" xml:space="preserve">
     <value>New Customer</value>
   </data>
+  <data name="OrderApproved" xml:space="preserve">
+    <value>The order has been approved successfuly</value>
+  </data>
+  <data name="OrderRejected" xml:space="preserve">
+    <value>The order has been rejected successfuly</value>
+  </data>
   <data name="OtrosPageTitle" xml:space="preserve">
     <value>Other</value>
   </data>
@@ -235,7 +250,7 @@
     <value>Product deleted!</value>
   </data>
   <data name="ProductFieldCreado" xml:space="preserve">
-    <value>Created a</value>
+    <value>Created on</value>
   </data>
   <data name="ProductFieldId" xml:space="preserve">
     <value>Id</value>
@@ -333,6 +348,9 @@
   <data name="Version" xml:space="preserve">
     <value>Version 0.11</value>
   </data>
+  <data name="WarningMsgBoxApprove" xml:space="preserve">
+    <value>Are you sure you wish to approve the order?</value>
+  </data>
   <data name="WarningMsgBoxChooseOneCustomer" xml:space="preserve">
     <value>You must pick a customer</value>
   </data>
@@ -347,6 +365,9 @@
   </data>
   <data name="WarningMsgBoxDeleteCustomer" xml:space="preserve">
     <value>Are you sure you wish to delete the customer?</value>
+  </data>
+  <data name="WarningMsgBoxDeleteOrder" xml:space="preserve">
+    <value>Are you sure you wish to reject the order?</value>
   </data>
   <data name="WarningMsgBoxDeleteProduct" xml:space="preserve">
     <value>Are you sure you wish to delete the product?</value>

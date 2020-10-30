@@ -53,8 +53,8 @@
                 <DropShadowEffect/>
             </DataGrid.Effect>
         </DataGrid>
-        <Button Command="{Binding ProductUpdateCommand}" x:Name="btnEditProduct" Content="{x:Static properties:Resources.ButtonEdit}" HorizontalAlignment="Left" Margin="624,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Click="btnEditProduct_Click" Width="100"/>
-        <Button Command="{Binding NewProductCommand}" x:Name="btnNewProduct" Content="{x:Static properties:Resources.ButtonAdd}" HorizontalAlignment="Left" Margin="497,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Click="btnEditProduct_Click" Width="100"/>
+        <Button Command="{Binding ProductUpdateCommand}" x:Name="btnEditProduct" Content="{x:Static properties:Resources.ButtonEdit}" HorizontalAlignment="Left" Margin="624,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Width="100"/>
+        <Button Command="{Binding NewProductCommand}" x:Name="btnNewProduct" Content="{x:Static properties:Resources.ButtonAdd}" HorizontalAlignment="Left" Margin="497,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215" Width="100"/>
         <Separator HorizontalAlignment="Left" Margin="82,198,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Page>

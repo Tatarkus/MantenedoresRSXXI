@@ -88,6 +88,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aprobar.
+        /// </summary>
+        public static string ButtonApprove {
+            get {
+                return ResourceManager.GetString("ButtonApprove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancelar.
         /// </summary>
         public static string ButtonCancel {
@@ -129,6 +138,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string ButtonEdit {
             get {
                 return ResourceManager.GetString("ButtonEdit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rechazar.
+        /// </summary>
+        public static string ButtonReject {
+            get {
+                return ResourceManager.GetString("ButtonReject", resourceCulture);
             }
         }
         
@@ -295,6 +313,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Descripción.
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Modificando mesa.
         /// </summary>
         public static string EditCTable {
@@ -390,6 +417,24 @@ namespace MantenedoresSigloXXI.Properties {
         public static string NewProduct {
             get {
                 return ResourceManager.GetString("NewProduct", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to La ha orden ha sido aprobada correctamente.
+        /// </summary>
+        public static string OrderApproved {
+            get {
+                return ResourceManager.GetString("OrderApproved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to La ha orden ha sido rechazada correctamente.
+        /// </summary>
+        public static string OrderRejected {
+            get {
+                return ResourceManager.GetString("OrderRejected", resourceCulture);
             }
         }
         
@@ -727,6 +772,15 @@ namespace MantenedoresSigloXXI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ¿Seguro que desea aprobar la orden?.
+        /// </summary>
+        public static string WarningMsgBoxApprove {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxApprove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Debe seleccionar un cliente.
         /// </summary>
         public static string WarningMsgBoxChooseOneCustomer {
@@ -768,6 +822,15 @@ namespace MantenedoresSigloXXI.Properties {
         public static string WarningMsgBoxDeleteCustomer {
             get {
                 return ResourceManager.GetString("WarningMsgBoxDeleteCustomer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ¿Seguro que desea rechazar la orden?.
+        /// </summary>
+        public static string WarningMsgBoxDeleteOrder {
+            get {
+                return ResourceManager.GetString("WarningMsgBoxDeleteOrder", resourceCulture);
             }
         }
         

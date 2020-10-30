@@ -11,5 +11,12 @@ namespace MantenedoresSigloXXI.Views
             InitializeComponent();
             DataContext = viewModel;
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var v = (OtrosViewModel)DataContext;
+            if(e.AddedItems.Count==1)
+                v.PopulateProducts( e.AddedItems[0]);
+        }
     }
 }

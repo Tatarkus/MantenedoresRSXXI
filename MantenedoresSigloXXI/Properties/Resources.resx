@@ -378,4 +378,25 @@
   <data name="TableFieldWaiterId" xml:space="preserve">
     <value>ID Mesero</value>
   </data>
+  <data name="ButtonApprove" xml:space="preserve">
+    <value>Aprobar</value>
+  </data>
+  <data name="ButtonReject" xml:space="preserve">
+    <value>Rechazar</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="OrderApproved" xml:space="preserve">
+    <value>La ha orden ha sido aprobada correctamente</value>
+  </data>
+  <data name="OrderRejected" xml:space="preserve">
+    <value>La ha orden ha sido rechazada correctamente</value>
+  </data>
+  <data name="WarningMsgBoxApprove" xml:space="preserve">
+    <value>¿Seguro que desea aprobar la orden?</value>
+  </data>
+  <data name="WarningMsgBoxDeleteOrder" xml:space="preserve">
+    <value>¿Seguro que desea rechazar la orden?</value>
+  </data>
 </root>

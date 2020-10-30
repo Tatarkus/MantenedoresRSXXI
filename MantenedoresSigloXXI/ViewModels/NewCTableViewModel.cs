@@ -56,7 +56,7 @@ namespace MantenedoresSigloXXI.ViewModels
                 switch (result)
                 {
                     case MessageBoxResult.OK:
-                        int r = CTableController.AddCTable(NewCTable);
+                        int r = CTableController.addTable(NewCTable);
                         if(r == 201)
                         {
 
