@@ -11,7 +11,7 @@ namespace MantenedoresSigloXXI.Controllers
 {
     public static class ProductController
     {
-        private static readonly string ProductsURL = "http://18.229.150.241:3001/api/v1/admin/products/";
+        private static readonly string ProductsURL = "http://localhost:3001/api/v1/admin/products/";
         public static string ProductsJSON = "";
 
         public class ProductJson

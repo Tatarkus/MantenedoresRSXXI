@@ -13,8 +13,8 @@ namespace MantenedoresSigloXXI.Controllers
 {
     public static class RestockOrderController
     {
-        private static readonly string orders = "http://18.229.150.241:3001/api/v1/admin/inventory-orders/";
-        private static readonly string products = "http://18.229.150.241:3001/api/v1/admin/inventory-orders/products/";
+        private static readonly string orders = "http://localhost:3001/api/v1/admin/inventory-orders/";
+        private static readonly string products = "http://localhost:3001/api/v1/admin/inventory-orders/products/";
 
 
         public static string myjson = "";

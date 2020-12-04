@@ -11,7 +11,7 @@ namespace MantenedoresSigloXXI.Controllers
 {
     public static class CTableController
     {
-        private static readonly string CTablesURL = "http://18.229.150.241:8081/admin/tables/";
+        private static readonly string CTablesURL = "http://localhost:8081/admin/tables/";
         public static string CTablesJSON = "";
 
         public class CTableJson
