@@ -47,7 +47,7 @@ namespace MantenedoresSigloXXI.ViewModels
                         {
 
                             Orders.Remove(Selected);
-                            Selected = Orders.First();
+                            Selected = Orders.FirstOrDefault();
                             MessageBox.Show(Properties.Resources.OrderRejected, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
                         }
                         else
@@ -86,7 +86,7 @@ namespace MantenedoresSigloXXI.ViewModels
                         if (r == 201)
                         {
                             Orders.Remove(Selected);
-                            Selected = Orders.First();
+                            Selected = Orders.FirstOrDefault();
                             MessageBox.Show(Properties.Resources.OrderApproved, Properties.Resources.WarningMsgBoxTitle, MessageBoxButton.OK);
 
                         }
