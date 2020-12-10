@@ -108,7 +108,6 @@
                     <DropShadowEffect/>
                 </DataGrid.Effect>
             </DataGrid>
-            <Button Foreground="Red" Command="" x:Name="btnEditProduct" Content="{x:Static properties:Resources.ButtonReject}" HorizontalAlignment="Left" Margin="280,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215"  Width="100"/>
             <Button Command="{Binding ApproveOrder}" x:Name="btnNewProduct" Content="{x:Static properties:Resources.ButtonApprove}" HorizontalAlignment="Left" Margin="400,0,0,0" Grid.Row="2" VerticalAlignment="Center" RenderTransformOrigin="0.43,-0.215"  Width="100"/>
         </Grid>
     </Grid>
