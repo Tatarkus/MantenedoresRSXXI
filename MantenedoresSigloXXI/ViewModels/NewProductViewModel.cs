@@ -25,7 +25,6 @@ namespace MantenedoresSigloXXI.ViewModels
       
         // Product _updatingProduct;
         //Observable name = new Observable();
-        private Product originalProduct;
         private Product newProduct;
         public Product NewProduct
         {

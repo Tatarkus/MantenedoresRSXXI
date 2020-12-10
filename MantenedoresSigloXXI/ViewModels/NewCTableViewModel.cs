@@ -25,7 +25,6 @@ namespace MantenedoresSigloXXI.ViewModels
       
         // Product _updatingProduct;
         //Observable name = new Observable();
-        private CTable originalCTable;
         private CTable newCTable;
         public CTable NewCTable
         {

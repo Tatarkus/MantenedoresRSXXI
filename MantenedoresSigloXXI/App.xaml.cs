@@ -102,11 +102,13 @@ namespace MantenedoresSigloXXI
             services.AddTransient<SettingsViewModel>();
             services.AddTransient<SettingsPage>();
 
-            
+            services.AddTransient<MonthlyViewModel>();
+            services.AddTransient<MonthlyPage>();
 
-            
 
-            
+
+
+
 
 
 

@@ -29,6 +29,7 @@ namespace MantenedoresSigloXXI.Services
             Configure<CTablesViewModel, CTablesPage>();
             Configure<NewCTableViewModel, NewCTablePage>();
             Configure<CTableUpdateViewModel, CTableUpdatePage>();
+            Configure<MonthlyViewModel, MonthlyPage>();
         }
 
         public Type GetPageType(string key)

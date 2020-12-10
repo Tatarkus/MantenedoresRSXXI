@@ -42,6 +42,7 @@ namespace MantenedoresSigloXXI.ViewModels
             new HamburgerMenuGlyphItem() { Label = Resources.ShellProductsPage, Glyph = "\ue719", TargetPageType = typeof(ProductsViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellTablesPage, Glyph = "\ue8D4", TargetPageType = typeof(CTablesViewModel) },
             new HamburgerMenuGlyphItem() { Label = Resources.ShellOtrosPage, Glyph = "\ue8fd", TargetPageType = typeof(OtrosViewModel) },
+            new HamburgerMenuGlyphItem() { Label = Resources.ShellOtrosPage, Glyph = "\ue210", TargetPageType = typeof(MonthlyViewModel) },
         };
 
         public ObservableCollection<HamburgerMenuItem> OptionMenuItems { get; } = new ObservableCollection<HamburgerMenuItem>()

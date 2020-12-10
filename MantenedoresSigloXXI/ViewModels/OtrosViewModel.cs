@@ -121,7 +121,8 @@ namespace MantenedoresSigloXXI.ViewModels
                 Orders.Add(item);
             }
 
-            Selected = Orders.First();
+                Selected = Orders.FirstOrDefault();
+ 
         }
 
         public void PopulateProducts(object e)
